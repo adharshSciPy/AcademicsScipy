@@ -1,0 +1,1142 @@
+.topElement {
+    width: 100%;
+}
+
+.topElementOuter {
+    width: 100%;
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Ensure content and image are aligned properly */
+}
+
+.topElementContentDiv {
+    width: 50%;
+    padding-top: 5rem;
+}
+
+.topContentDivHead {
+    font-family: "Poppins", Sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    color: #152246;
+    margin: 0 0 1rem;
+}
+
+.topContentDivSubHead {
+    font-family: "Poppins", Sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #152246;
+}
+
+.topContentParaDiv {
+    padding: 1rem 0;
+}
+
+.topContentParagraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #404040;
+}
+
+.topContentBtn {
+    background-color: #f1ce3b;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    fill: #000000;
+    color: #000000;
+    border-radius: 4px;
+    padding: 13px 40px 13px 37px;
+    border: none;
+}
+
+.topContentBtn:hover {
+    transition: opacity 1s ease;
+    opacity: 0.6;
+}
+
+.topElementImageDiv {
+    width: 50%;
+}
+
+.topElementImgDisplay {
+    width: 100%;
+}
+
+.topElementImage {
+    width: 100%;
+    object-fit: fill;
+}
+
+/* Responsive styles */
+@media (max-width: 786px) {
+    .topElementOuter {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .topElementContentDiv {
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .topElementImageDiv {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .topElementImage {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .topContentDivHead {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .topContentDivSubHead {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .topContentParagraph {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .topContentBtn {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+}
+
+.openingsDisplayOuterDiv {
+    width: 100%;
+    margin: 2rem 0 0;
+    background: #f1f9ff;
+    padding: 1rem;
+}
+
+.openingsHeading {
+    font-family: "Poppins", Sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #152246;
+    text-align: center;
+}
+
+.singleOpeningContent {
+    border: 3px solid #9ec8ff;
+    border-radius: 15px;
+    width: 100%;
+    float: left;
+    margin: 15px 0;
+    width: 90%;
+    background: #ffff;
+    padding: 2rem;
+    margin: auto;
+}
+
+.openingsContentOuterDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 3rem;
+}
+
+.jobTitleContent {
+    color: #222d4e;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 1.3rem;
+
+    /* line-height: 1.2 */
+}
+
+.companyLocation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.companyCountryFlag {
+    display: flex;
+    gap: 10px;
+}
+
+.companyFlag {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.jobType {
+    margin: auto;
+    font-size: 14px;
+}
+
+.workingHoursContent {
+    font-size: 14px;
+    word-wrap: break-word;
+    color: #8e8e8e;
+    margin: auto;
+}
+
+.jobApplyDiv {
+    align-items: center;
+}
+
+.jobApplyBtn {
+    font-size: 14px;
+    padding: 10px 40px;
+    background-color: #f1ce3b;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.jobMoreDetailsOuter {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+    padding: 12px 0;
+}
+
+.moreDetails {
+    padding: 10px 30px;
+    /* margin-top: 20px; */
+    color: #000;
+    border: none;
+    background-color: #f1f9ff;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrowIcon {
+    font-size: 14px;
+}
+
+.jobDetailsListingDiv {
+    width: 60%;
+}
+
+.jobDetailsList {
+    font-size: 16px;
+
+    margin: 20px 20px 0;
+}
+
+.positionDiv {
+    margin: auto;
+    padding: 1rem;
+}
+
+.aboutOuterDiv {
+    background-color: #fffcee;
+    width: 100%;
+    padding: 4rem;
+    /* padding-bottom: 350px; */
+    /* height: 350px; */
+}
+
+.aboutMainHead {
+    font-family: "Poppins", Sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #152246;
+    text-align: center;
+}
+
+.aboutSubHeadings {
+    margin: 0px 25px 0px 25px;
+    padding: 10px;
+}
+
+.aboutSubDetails {
+    text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 27px;
+    color: #404040;
+}
+
+.aboutContentBtn {
+    background-color: #f1ce3b;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    fill: #000000;
+    color: #000000;
+    border-radius: 4px;
+    padding: 13px 40px 13px 37px;
+    border: none;
+}
+
+.aboutContentBtn:hover {
+    transition: opacity 1s ease;
+    opacity: 0.6;
+}
+
+.aboutBtnDiv {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.imageGridOuterDiv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    padding: 0 30px;
+    /* Adjust padding */
+    width: 100%;
+    margin-top: -70px;
+
+    /* max-width: 1200px; */
+}
+
+.GridImg1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+}
+
+.GridImg2 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.GridImg3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+}
+
+.imgGrid1,
+.imgGrid2,
+.imgGrid3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.workCultureOuterDiv {
+    background-color: #d7f0fd;
+    padding: 96px 0px 146px 0px;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.workCulture {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid; */
+    gap: 20px;
+}
+
+.workCultureImgDiv {
+    width: 100%;
+    object-fit: contain;
+    /* overflow: hidden; */
+}
+
+.workCultureImg {
+    width: 100%;
+    height: 424px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.workCultureContentDiv {
+    width: 100%;
+    padding: 1rem;
+    text-align: right;
+}
+
+.workCultureContentHead {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #152246;
+    margin: 10px 0;
+}
+
+.workCultureContentPara {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #404040;
+}
+
+.carouselOuterDiv {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.sliderWrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.carouselHeading {
+    font-family: "Poppins", Sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #152246;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.carouselSingleCardOuter {
+    padding: 30px;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    max-width: 450px;
+    /* Keep it smaller */
+    text-align: center;
+    height: max-content;
+    margin: auto;
+    /* Ensures cards are centered */
+}
+
+.singleWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.singleCardImageOuter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singlePersonImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedbackPara {
+    color: #20303d;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.singleCardName {
+    color: #404040;
+    font-weight: bolder;
+    font-size: 14px;
+    margin: 1rem 0;
+}
+
+.personPosition {
+    color: #404040;
+    font-weight: 500;
+}
+
+.applicationFormOuter {
+    background-color: #f1f9ff;
+    min-height: max-content;
+    margin-top: 2rem;
+    /* display: flex;
+  justify-content: center; */
+}
+
+.applicationFormMain {
+    max-width: 710px;
+    background-color: #f0f7ff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.formTitle {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.formContainer {
+    width: 100%;
+}
+
+.formRow {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.formInput {
+    width: 50%;
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.formInput::placeholder {
+    color: #bdc1c9;
+}
+
+.fileLabel {
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #222d4e;
+    margin: 10px 0;
+}
+
+.fileInput {
+    width: 100%;
+    float: left;
+    height: 108px;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    color: #bdc1c9;
+    display: flex;
+    padding: 35px;
+    text-align-last: center;
+    margin-bottom: 15px;
+}
+
+.fullWidthInput {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.fullWidthInput::placeholder {
+    color: #bdc1c9;
+}
+
+.formCheckboxOuter {
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.formCheckbox {
+    margin-right: 5px;
+}
+
+.checkboxLabel {
+    color: #222d4e;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 15px;
+    font-style: italic;
+}
+
+.subimtButtonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.subimtButton {
+    background-color: #f1ce3b;
+    color: #000000;
+}
+
+.subimtButton {
+    padding: 10px 25px;
+    margin: 15px 0;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.subimtButton:hover {
+    transition: opacity 1s ease;
+    opacity: 0.6;
+}
+
+.locationOuterDiv {
+    width: 100%;
+    margin: auto;
+}
+
+.locationInnerDiv {
+    max-width: 1140px;
+    margin: auto;
+    padding: 10px;
+}
+
+.locationHeading {
+    text-align: center;
+    margin: 3rem 0;
+    font-family: "Poppins", Sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 38px;
+    color: #152246;
+}
+
+.locationImgOuter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.locationImgSingle {
+    width: 30%;
+    border: 3px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.imageSingleCard {
+    width: 100%;
+    height: 175px;
+    display: block;
+}
+
+.singleImageLoc {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.officeLocation {
+    font-family: "Poppins", Sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 39px;
+    color: #000000;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.slick-dots {
+    bottom: -30px;
+    /* Adjust positioning */
+}
+
+.slick-dots li {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: rgb(211, 206, 206);
+    /* Default dot color */
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+
+.slick-dots li.slick-active button:before {
+    color: black;
+    /* Active dot color */
+    opacity: 1;
+    transform: scale(1.2);
+    /* Slightly enlarge active dot */
+}
+
+/* Custom Dot Design */
+.customDot {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    margin: -10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slick-dots li.slick-active .customDot {
+    transform: scale(1.5);
+    background-color: black;
+}
+
+@media (max-width: 786px) {
+    .topElementOuter {
+        flex-direction: column-reverse;
+        padding: 2rem;
+    }
+
+    .topElementContentDiv,
+    .topElementImageDiv {
+        width: 100%;
+    }
+
+    .outerSingleFeedbackCard {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carouselHeading {
+        text-align: center;
+    }
+
+    .carouselSingleCardOuter {
+        padding: 18px;
+        height: max-content;
+    }
+
+    .formRow {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .formInput {
+        width: 100%;
+    }
+
+    .locationImgOuter {
+        flex-direction: column;
+    }
+
+    .locationImgSingle {
+        width: 90%;
+        margin: auto;
+    }
+
+    .companyLocation {
+        flex-direction: column;
+        align-items: start;
+        margin-left: 30px;
+        gap: 20px;
+    }
+
+    .jobMoreDetailsOuter {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .jobDetailsListingDiv {
+        width: 90%;
+    }
+
+    .workCultureOuterDiv {
+        padding-top: 0;
+    }
+
+    .workCultureImg {
+        border-radius: 0;
+    }
+
+    .workCulture {
+        flex-direction: column;
+    }
+
+    .workCultureContentDiv {
+        text-align: center;
+    }
+
+    .singleCardStaticImg {
+        display: none;
+    }
+}
+
+@media (max-width: 486px) {
+    .topElementOuter {
+        padding: 1rem;
+    }
+
+    .aboutOuterDiv {
+        padding: 4rem 2rem;
+    }
+
+    .carouselOuterDiv {
+        padding: 1rem;
+    }
+
+    .imageGridOuterDiv {
+        gap: 10px;
+        padding: 0 6px;
+    }
+
+    .singlePersonImg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .carouselHeading {
+        font-size: 30px;
+    }
+
+    .subimtButton {
+        padding: 8px 25px;
+    }
+
+    .locationImgSingle {
+        width: 80%;
+    }
+
+    .locationHeading {
+        font-size: 30px;
+    }
+
+    .officeLocation {
+        margin: 1rem 0;
+    }
+}
+
+
+/* header */
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.headerContainerMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.headerLogo {
+    overflow: hidden;
+    width: 20%;
+}
+
+.logoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 170px;
+}
+
+.headerItems {
+    width: 70%;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+    padding: 8px 11px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.4s all ease-in-out;
+}
+
+.navLink:hover {
+    color: #fcb900;
+}
+
+.dropDown {
+    position: relative;
+}
+
+.dropDown a {
+    padding-right: 0;
+}
+
+.subMenuNav {
+    display: none;
+    position: absolute;
+    bottom: -45px;
+    left: 40px;
+    z-index: 2;
+    padding: 10px;
+    background-color: white;
+}
+
+.subMenuNav.active {
+    display: block;
+}
+
+.subMenuNav li {
+    list-style: none;
+}
+
+.subMenuNav li a {
+    padding: 0;
+    white-space: nowrap;
+}
+
+.dropDown::after {
+    content: "▾";
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lastChild {
+    background-color: #f1ce3b;
+    position: relative;
+    padding: 5px 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+}
+
+.lastChild a:hover {
+    color: black;
+    opacity: 0.8;
+}
+
+.lastChild::after {
+    content: "";
+    background: url(../../assets/navarrow.png) 0 0 no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    right: 14px;
+    top: 17px;
+}
+
+.mobileNavIcon {
+    display: none;
+}
+
+.mobileNav {
+    height: 40px;
+    width: 40px;
+}
+
+.mobileNav img {
+    height: 100%;
+    width: 100%;
+}
+
+.mobileNavMain {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 100vh;
+    transform: scaleY(0);
+    z-index: 100;
+    transition: 0.2s all ease-in-out;
+    width: 100%;
+}
+
+.active {
+    transform: scaleY(1);
+}
+
+.mobileNavItem {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+
+}
+
+.mobileNavContents {
+
+    width: 100%;
+}
+
+.mobileNavContents a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    padding: 20px;
+}
+
+.lastChildMob {
+    width: 100%;
+    background-color: #f1ce3b;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.4s all ease-in-out;
+}
+
+@media (max-width: 1100px) {
+    .headerContainerMain {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1070px) {
+    .navContainer {
+        display: none;
+    }
+
+    .mobileNavIcon {
+        display: block;
+    }
+}
+
+@media (max-width: 760px) {
+    .headerLogo {
+        width: 60%;
+    }
+
+    .logoContainer {
+        justify-content: start;
+    }
+}
+
+
+/* footer */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footerMainContainer {
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 50px 20px 50px;
+    background: linear-gradient(to bottom,
+            rgb(255 255 255) 0%,
+            rgb(185 219 255 / 46%) 100%);
+}
+
+.footerLogoContainer {
+    width: 100%;
+}
+
+.logoMain {
+    width: 170px;
+}
+
+.logoMain img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footerDetailsContainer {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.footerDetailsMain {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    border-bottom: 1px solid #6ec1e4;
+    padding-bottom: 50px;
+}
+
+.detailsList {
+    list-style: none;
+}
+
+.listFontStyle {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.listHeading {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.waterMarkDesign {
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .footerDetailsMain {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .detailsContainer {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .waterMarkDesign {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footerDetailsMain {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .logoMain {
+        margin: auto;
+    }
+
+    .detailsContainer ul {
+        text-align: center;
+    }
+}

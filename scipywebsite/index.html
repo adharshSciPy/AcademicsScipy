@@ -1,194 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
-    <!-- <link rel="stylesheet" href="./css/popup.css"> -->
-    <link rel="icon" href="./assets/Scipy Favicon.png" type="image/Favicon">
+    <title>
+      ScipyTechnologies | Best Software Solutions | Trivandrum, Kerala
+    </title>
 
-    <!-- internal css for popup modal -->
-<style>
-  /* Modal container */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centers the modal vertically and horizontally */
-    overflow: hidden; /* Prevents overflow of content outside the viewport */
-    padding: 10px;
-  }
-  
-  /* Modal content box */
-  .modal-content {
-    background-color: #fefefe;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-    max-width: 400px; 
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 0.3s ease-in-out; /* Fade in effect */
-    max-height: 90vh; /* Prevent modal from exceeding the viewport height */
-    overflow-y: auto; /* Enable scrolling within the modal if content exceeds max-height */
-    position: relative; /* To position the close button within this container */
-  }
-  
-  /* Close button */
-  .close-btn {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px; /* Align the button to the right */
-  }
-  
-  .close-btn:hover,
-  .close-btn:focus {
-    color: #000;
-    text-decoration: none;
-  }
-  
-  /* Form styles */
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form label {
-    margin-top: 10px;
-  }
-  
-  form input {
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    width: 100%;
-  }
-  
-  #popupbtn{
-    background-color: #0092ff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color cubic-bezier(0.785, 0.135, 0.15, 0.86) ease-in-out;
-    opacity: 75%;
-  }
-  
-  #popupbtn:hover {
-    background-color: #0092ff;
-    opacity: 100%;
-    
-    
-    
-  }
-  #modalHead{
-    font-size: large;
-    color: #0092ff;
-  }
-  /* Fade-in animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  
-</style>
-
-    
-<!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2823820421127028');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=2823820421127028&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-   
-    <!-- Google Tag Manager -->  
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-WL6LXM3J");
-    </script>
-    <!-- End Google Tag Manager -->
-    
-  <title> ScipyTechnolgoies | Best Software Solutions|Trivandrum,Kerala| </title>
-  
-
-  
-
-    
-  
-    
-    <meta name="description" content="Best Software Solutions in Kerala,Trivandrum Experience transformational growth with our advanced software solutions & comprehensive training programs at Scipytechnologies.">
-    <meta name="keywords" content="Best Software Solutions in Trivandrum,Best AI Solutions,scipy,scipyphotos,Erp,scipyreviews,Webdevelopment company,">
-        
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://scipytechnologies.com/"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="sDeQ9peg8LFyKieyA-3mhyR-ZlrXDyrqIEEQnauzG6s" />
-    
-    <!-- Other meta tags, stylesheets, and scripts may be here -->
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JTWQJKVN82"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JTWQJKVN82');
-</script>
-
-      <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Best Software Solutions in Kerala, Trivandrum. Experience transformational growth with our advanced software solutions & comprehensive training programs at Scipytechnologies."
+    />
+    <meta
+      name="keywords"
+      content="Best Software Solutions in Trivandrum, Best AI Solutions, scipy, scipyphotos, Erp, scipyreviews, Webdevelopment company"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://scipytechnologies.com/" />
+    <meta
+      name="google-site-verification"
+      content="sDeQ9peg8LFyKieyA-3mhyR-ZlrXDyrqIEEQnauzG6s"
     />
 
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/Scipy Favicon.png" type="image/png" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Use either local or CDN OwlCarousel, not both -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -205,12 +45,15 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -218,47 +61,242 @@
       crossorigin="anonymous"
     />
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Script (Valid CDN) -->
     <script
-      src="https://example.com/fontawesome/v6.4.2/js/fontawesome.js"
-      data-auto-replace-svg="nest"
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      crossorigin="anonymous"
     ></script>
-    <!-- ajax for popup form -->
+
+    <!-- jQuery (for popup form) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2823820421127028");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2823820421127028&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WL6LXM3J");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JTWQJKVN82"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-JTWQJKVN82");
+    </script>
+
+    <!-- Sitemap link (not XML block) -->
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="/sitemap.xml"
+    />
+
+    <!-- Internal Modal CSS (Optional: Move to a separate CSS file if preferred) -->
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 10px;
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 0.3s ease-in-out;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+      }
+
+      .close-btn {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+
+      .close-btn:hover,
+      .close-btn:focus {
+        color: #000;
+        text-decoration: none;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form label {
+        margin-top: 10px;
+      }
+
+      form input {
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      #popupbtn {
+        background-color: #0092ff;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        opacity: 75%;
+      }
+
+      #popupbtn:hover {
+        background-color: #0092ff;
+        opacity: 100%;
+      }
+
+      #modalHead {
+        font-size: large;
+        color: #0092ff;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
-  
+
   <body>
-      <!-- popup form -->
-       <!-- Add this div for the loading spinner -->
-<!--  -->
+    <!-- popup form -->
+    <!-- Add this div for the loading spinner -->
+    <!--  -->
 
-<!-- Ensure your form includes a submit button -->
+    <!-- Ensure your form includes a submit button -->
 
+    <div id="popupModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h3 id="modalHead">Know More</h3>
+        <form id="popupForm" action="">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
 
-      <div id="popupModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModal">&times;</span>
-            <h3 id="modalHead">Know More</h3>
-            <form id="popupForm" action="">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <label for="phone">Phone Number:</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            required
+          />
 
-                <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
-
-                <button id="popupbtn" type="submit">Submit</button>
-            </form>
-        </div>
+          <button id="popupbtn" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
 
     <div class="sidebar-closer"></div>
     <div class="Gotohome">
       <a><i class="fa-solid fa-arrow-up"></i></a>
     </div>
-    
+
     <div class="ping"></div>
     <div class="whatsapp-btn">
       <a
@@ -274,7 +312,11 @@
           <div class="auto-container">
             <nav class="nav-bar">
               <div class="logo" id="logo">
-                <img id="logo-image" src="./assets/header-logo.png" alt="Scipy Logo" />
+                <img
+                  id="logo-image"
+                  src="./assets/header-logo.png"
+                  alt="Scipy Logo"
+                />
               </div>
               <div class="menu-list">
                 <ul style="margin: 0">
@@ -379,7 +421,7 @@
                   <li>
                     <a id="About-us" class="active-link" href="#">About Us</a>
                   </li>
-                  
+
                   <li>
                     <a
                       id="Contact-us"
@@ -410,8 +452,7 @@
             >
               <div class="home-col text-container">
                 <h1 class="h1-large fade-in">
-                  Digital <br class="br-tag" />
-                  Marketing
+                  Globally Recognised<br> Software Training <br>Institute In Kerala
                 </h1>
                 <h5 class="home-card-title fade-in">
                   Make Your Move Mark Your Success
@@ -451,10 +492,7 @@
               class="home-row item d-flex justify-content-between align-items-center m-auto"
             >
               <div class="home-col text-container">
-                <h1 class="h1-large fade-in">
-                  ERP <br class="br-tag" />
-                  Solutions
-                </h1>
+                <h1 class="h1-large fade-in">Professional Courses</h1>
                 <h5 class="home-card-title fade-in">
                   Make Your Move Mark Your Success
                 </h5>
@@ -493,10 +531,7 @@
               class="home-row item d-flex justify-content-between align-items-center m-auto"
             >
               <div class="home-col text-container">
-                <h1 class="h1-large fade-in">
-                  Website <br class="br-tag" />
-                  Development
-                </h1>
+                <h1 class="h1-large fade-in">Hybrid Courses</h1>
                 <h5 class="home-card-title fade-in">
                   Make Your Move Mark Your Success
                 </h5>
@@ -536,10 +571,95 @@
               class="home-row item d-flex justify-content-between align-items-center m-auto"
             >
               <div class="home-col text-container">
-                <h1 class="h1-large fade-in">
-                  AI <br class="br-tag" />
-                  Solutions
-                </h1>
+                <h1 class="h1-large fade-in">Short Term Courses</h1>
+                <h5 class="home-card-title fade-in">
+                  Make Your Move Mark Your Success
+                </h5>
+                <p class="p-large fade-in">
+                  Unlock the potential of AI with our comprehensive solutions.
+                  From machine learning algorithms to natural language
+                  processing, we deploy intelligent systems that adapt, learn,
+                  and enhance business operations. Whether you're looking for
+                  predictive analytics, automation, or personalized user
+                  experiences, our AI expertise transforms
+                  concepts into reality.
+                </p>
+                <div class="services-div fade-in">
+                  <a
+                    id="service-btn"
+                    role="button"
+                    class="btn btn-primary services-btn btn-effect"
+                    href="./pages/aisol.html"
+                  >
+                    <div class="text-wrap">
+                      <span class="text-1"
+                        >Get Services <i class="fa-solid fa-arrow-right"></i
+                      ></span>
+                      <!-- <span class="text-2">Get Services <i class="fa-solid fa-arrow-right"></i></span> -->
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="home-col image-container"
+                style="width: auto; height: 600px; place-items: center"
+              >
+                <img
+                  id="moving-home-image"
+                  src="./assets/contacts/aisol.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="home-row item d-flex justify-content-between align-items-center m-auto"
+            >
+              <div class="home-col text-container">
+                <h1 class="h1-large fade-in">Business Management</h1>
+                <h5 class="home-card-title fade-in">
+                  Make Your Move Mark Your Success
+                </h5>
+                <p class="p-large fade-in">
+                  Unlock the potential of AI with our comprehensive solutions.
+                  From machine learning algorithms to natural language
+                  processing, we deploy intelligent systems that adapt, learn,
+                  and enhance business operations. Whether you're looking for
+                  predictive analytics, automation, or personalized user
+                  experiences, our AI expertise transforms
+                  concepts into reality.
+                </p>
+                <div class="services-div fade-in">
+                  <a
+                    id="service-btn"
+                    role="button"
+                    class="btn btn-primary services-btn btn-effect"
+                    href="./pages/aisol.html"
+                  >
+                    <div class="text-wrap">
+                      <span class="text-1"
+                        >Get Services <i class="fa-solid fa-arrow-right"></i
+                      ></span>
+                      <!-- <span class="text-2">Get Services <i class="fa-solid fa-arrow-right"></i></span> -->
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="home-col image-container"
+                style="width: auto; height: 600px; place-items: center"
+              >
+                <img
+                  id="moving-home-image"
+                  src="./assets/contacts/aisol.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="home-row item d-flex justify-content-between align-items-center m-auto"
+            >
+              <div class="home-col text-container">
+                <h1 class="h1-large fade-in">One Month Master Courses</h1>
                 <h5 class="home-card-title fade-in">
                   Make Your Move Mark Your Success
                 </h5>
@@ -592,7 +712,7 @@
                     <i class="fa-solid fa-laptop-code"></i>
                   </div>
                   <h4 class="card-heading">
-                    <a href="./pages/softwaredev.html">Software Development</a>
+                    <a href="./pages/softwaredev.html">Business Management</a>
                   </h4>
                   <p class="text-card">
                     Industry specific custom Software development solution for
@@ -814,6 +934,28 @@
                   technology, and partners in your journey towards
                   digital excellence.
                 </p>
+                <div class="logo-divs">
+                  <div class="logo-main-container">
+                    <div class="logo-container">
+                      <div class="logo-icon">
+                        <img src="./assets/google-docs (1).png" alt="">
+                      </div>
+                      <div class="logo-content"><p class="logo-content-p" style="margin: 0;">50+ Expert Trainers</p></div>
+                    </div>
+                    <div class="logo-container">
+                      <div class="logo-icon">
+                        <img src="./assets/security1.png" alt="" />
+                      </div>
+                      <div class="logo-content"><p class="logo-content-p" style="margin: 0;">50+ Expert Trainers</p></div>
+                    </div>
+                    <div class="logo-container">
+                      <div class="logo-icon">
+                        <img src="./assets/graduation.png" alt="" />
+                      </div>
+                      <div class="logo-content"><p class="logo-content-p" style="margin: 0;">50+ Expert Trainers</p></div>
+                    </div>
+                  </div>
+                </div>
                 <div class="aboutus-btn">
                   <a href="./pages/aboutus.html">About Us</a>
                 </div>
@@ -822,164 +964,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery-page">
-        <div class="auto-container">
-          <div class="gallery-title">
-            <h3 class="sec-title-gallery text-nowrap">
-              <i class="fa-brands fa-envira"></i>OUR GALLERY
-            </h3>
-            <h2 class="gallery-title-head">SciPy Tech Gallery</h2>
-            <div class="sec-title-seperator">
-              <div class="blue-item"></div>
-            </div>
-          </div>
-        </div>
-        <div class="outer-container">
-          <div class="gallery-owl owl-carousel owl-theme">
-            <div class="gal-card item">
-              <div class="top-hover-div">
-                <img
-                  class="gal-img"
-                  src="./assets/gallery/scipy (1).jpg"
-                  alt="Scipy office room"
-                />
-                <div class="gradient-text">
-                  <p></p>
-                  <h2>Meeting Room</h2>
-                </div>
-              </div>
-            </div>
-            <div class="gal-card item">
-              <div class="top-hover-div">
-                <img
-                  class="gal-img"
-                  src="./assets/gallery/scipy (4).jpg"
-                  alt="Meeting Room"
-                />
-                <div class="gradient-text">
-                  <p></p>
-                  <h2>Meeting Room</h2>
-                </div>
-              </div>
-            </div>
-            <div class="gal-card item">
-              <div class="top-hover-div">
-                <img
-                  class="gal-img"
-                  src="./assets/gallery/scipy (3).jpg"
-                  alt="Software Application"
-                />
-                <div class="gradient-text">
-                  <p></p>
-                  <h2>Software Application</h2>
-                </div>
-              </div>
-            </div>
-            <div class="gal-card item">
-              <div class="top-hover-div">
-                <img
-                  class="gal-img"
-                  src="./assets/gallery/scipy (2).jpg"
-                  alt="Research & Development"
-                />
-                <div class="gradient-text">
-                  <p></p>
-                  <h2>Research & Development</h2>
-                </div>
-              </div>
-            </div>
-            <div class="gal-card item">
-              <div class="top-hover-div">
-                <img
-                  class="gal-img"
-                  src="./assets/gallery/scipy (5).jpg"
-                  alt="Entrance"
-                />
-                <div class="gradient-text">
-                  <p></p>
-                  <h2>Entrance</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- <section class="team-members">
-        <div class="auto-container">
-          <div class="gallery-title">
-            <h3 class="sec-title-gallery">
-              <i class="fa-solid fa-user-group"></i>OUR TEAM
-            </h3>
-            <h2 class="gallery-title-head">Team Members</h2>
-            <div class="sec-title-seperator">
-              <div class="blue-item"></div>
-            </div>
-          </div>
-          <div class="team-members-gallery">
-            <div class="team-row">
-              <div class="team-col">
-                <div class="team-image-div">
-                  <img
-                    class="team-img"
-                    src="https://i.pinimg.com/564x/b9/e0/e3/b9e0e30ac1ec95077b7e1d0abd250e5d.jpg"
-                    alt="CFO"
-                  />
-                  <div
-                    class="hover-social-menu d-flex justify-content-around align-items-baseline mt-3"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/dreamer_rickz/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/rahul-bose-cp-125a55220/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h4><a href="#" class="member-name">Rahul Bose C P</a></h4>
-                  <p class="member-position">CFO</p>
-                </div>
-              </div>
-              <div class="team-col">
-                <div class="team-image-div">
-                  <img
-                    class="team-img"
-                    src="https://i.pinimg.com/564x/b9/e0/e3/b9e0e30ac1ec95077b7e1d0abd250e5d.jpg"
-                    alt="CEO"
-                  />
-                  <div
-                    class="hover-social-menu d-flex justify-content-around align-items-baseline mt-3"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/goku_monu/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/gokul-krishnan-u-30193921a/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h4><a href="#" class="member-name">Gokul Krishnan U</a></h4>
-                  <p class="member-position">CEO</p>
-                </div>
-              </div>
-              <div class="team-col">
-                <div class="team-image-div">
-                  <img class="team-img" src="./assets/teams/women.jpg" alt="COO" />
-                  <div
-                    class="hover-social-menu d-flex justify-content-around align-items-baseline mt-3"
-                  >
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/_me._.angel/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                  </div>
-                </div>
-                <div class="team-content">
-                  <h4><a href="#" class="member-name">Ashtamy Ajayan</a></h4>
-                  <p class="member-position">COO</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
+
       <section class="Clients-Section">
         <div class="auto-container">
           <div class="clients-title">
@@ -1000,7 +985,10 @@
                 <img src="./assets/clients/mge-logo.png" alt="Our Clients" />
               </div>
               <div class="clients-logo item">
-                <img src="./assets/clients/maptell-logo.png" alt="Our Clients" />
+                <img
+                  src="./assets/clients/maptell-logo.png"
+                  alt="Our Clients"
+                />
               </div>
               <div class="clients-logo item">
                 <img src="./assets/clients/stjoseph.png" alt="Our Clients" />
@@ -1159,7 +1147,10 @@
             </div>
             <div class="tech-card">
               <div class="tech-up">
-                <img src="./assets/technologies/MachineLearning.png" alt="MachineLearning" />
+                <img
+                  src="./assets/technologies/MachineLearning.png"
+                  alt="MachineLearning"
+                />
               </div>
               <div class="tech-down">
                 <h3>Machine Learning</h3>
@@ -1167,7 +1158,10 @@
             </div>
             <div class="tech-card">
               <div class="tech-up">
-                <img src="./assets/technologies/Deep-learning.png" alt="Deep-learning" />
+                <img
+                  src="./assets/technologies/Deep-learning.png"
+                  alt="Deep-learning"
+                />
               </div>
               <div class="tech-down">
                 <h3>Deep Learning</h3>
@@ -1175,7 +1169,10 @@
             </div>
             <div class="tech-card">
               <div class="tech-up">
-                <img src="./assets/technologies/electron js.png" alt="electron js" />
+                <img
+                  src="./assets/technologies/electron js.png"
+                  alt="electron js"
+                />
               </div>
               <div class="tech-down">
                 <h3>Electron.Js</h3>
@@ -1192,6 +1189,170 @@
           </div>
         </div>
       </section>
+      <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+      <section id="about-scipy">
+        <div class="about-container-1">
+          <div class="sub-about-container-1">
+            <div class="sub-contents-about-container-1">
+              <div class="heading-sub">
+                <div class="first-content-about">
+                  <span>Excellence in Education</span>
+                </div>
+                <div class="second-content-about">
+                  <h3>
+                    Why We Are Fastest Growing<br /><span
+                      >Software Training Institute
+                    </span>
+                    In Kerala
+                  </h3>
+                </div>
+                <div class="third-content-about">
+                  <div class="card-about">
+                    <div class="card-icon">
+                      <img src="./assets/handshakecopy.png" alt="" />
+                    </div>
+                    <div class="card-heading-about">
+                      <h4>100% Placement <br />Assurance</h4>
+                    </div>
+                    <div class="card-descrition-about">
+                      <p class="card-descrition-about-p">
+                        Our experienced placement faculties provide best
+                        industry connections which help you to land on your
+                        dreamjob
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-about">
+                    <div class="card-icon">
+                      <img src="./assets/security1.png" alt="" />
+                    </div>
+                    <div class="card-heading-about">
+                      <h4>100% Placement <br />Assurance</h4>
+                    </div>
+                    <div class="card-descrition-about">
+                      <p class="card-descrition-about-p">
+                        Our experienced placement faculyies provide best
+                        industry connections which help you to land on your
+                        dreamjob
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-about">
+                    <div class="card-icon">
+                      <img src="./assets/stamp.png" alt="" />
+                    </div>
+                    <div class="card-heading-about">
+                      <h4>100% Placement <br />Assurance</h4>
+                    </div>
+                    <div class="card-descrition-about">
+                      <p class="card-descrition-about-p">
+                        Our experienced placement faculyies provide best
+                        industry connections which help you to land on your
+                        dreamjob
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-about">
+                    <div class="card-icon">
+                      <img src="./assets/security1copy.png" alt="" />
+                    </div>
+                    <div class="card-heading-about">
+                      <h4>100% Placement <br />Assurance</h4>
+                    </div>
+                    <div class="card-descrition-about">
+                      <p class="card-descrition-about-p">
+                        Our experienced placement faculyies provide best
+                        industry connections which help you to land on your
+                        dreamjob
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="carousel-section">
+        <div class="carousel-header-google">
+          <div class="google-details-google">
+            <div class="start-main-container-google">
+              <div class="image-heading-container-google">
+                <div class="image-container-google">
+                  <img
+                    src="./assets/pngimg.com - google_PNG19644.png"
+                    alt=""
+                    class="google-image"
+                  />
+                </div>
+                <div class="review-container">
+                  <h2>Reviews</h2>
+                </div>
+              </div>
+              <div class="star-container-google">
+                <div class="start-point-google">
+                  <h3>4.9</h3>
+                  <span class="review-stars star-size">★★★★★</span>
+                  <span>(319)</span>
+                </div>
+              </div>
+            </div>
+            <div class="review-us-container">
+              <div class="link-container">
+                <a
+                  href="https://www.google.com/search?sca_esv=046182418b1cd8f1&rlz=1C1VDKB_enIN1141IN1141&sxsrf=AHTn8zqoUJHtMKPNmYGD4oAqoIXE5TUBug:1746183439838&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzcZN52t2BB5N2N0BQ9e3Wi2g7pYQE4xZokPXqaxJ90jkBPAXoih1xA2JLKfMhU3ARAD0p5VohPZq38XhpOCHRHqP3CHva4jpDw-9hV5AIOou6gvWLA%3D%3D&q=Scipy+Technologies+Pvt+Ltd+Reviews&sa=X&ved=2ahUKEwj3wZOd0ISNAxWIzDgGHdI-C3kQ0bkNegQIHxAE&biw=1536&bih=695&dpr=1.25"
+                  >Review us on Google</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="review-card">
+              <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">
+                  Absolutely amazing service! Fast and friendly. Will definitely
+                  come again.
+                </div>
+                <div class="review-author">– John Doe</div>
+              </div>
+              <div class="review-item">
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-text">
+                  Great experience overall. A few small issues, but resolved
+                  quickly.
+                </div>
+                <div class="review-author">– Jane Smith</div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">
+                  Exceeded my expectations. Highly recommended for anyone
+                  needing quick help.
+                </div>
+                <div class="review-author">– Mark Johnson</div>
+              </div>
+              <div class="review-item">
+                <div class="review-stars">★★★★☆</div>
+                <div class="review-text">
+                  Helpful staff and prompt response. Will use again.
+                </div>
+                <div class="review-author">– Lisa Ray</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <button onclick="prevSlide()">← Prev</button>
+          <button onclick="nextSlide()">Next →</button>
+        </div>
+      </section>
       <section id="contact-sect" class="contact-sect">
         <div class="auto-container">
           <div class="gallery-title">
@@ -1206,7 +1367,10 @@
           <div class="contact-row">
             <div class="contact-col">
               <div class="upper-contact">
-                <img src="./assets/contacts/webdevsvg.svg" alt="Web Development" />
+                <img
+                  src="./assets/contacts/webdevsvg.svg"
+                  alt="Web Development"
+                />
               </div>
               <div class="lower-contact">
                 <h5><a href="#">Academic & Upgradation</a></h5>
@@ -1224,7 +1388,7 @@
                 </div>
               </div>
             </div>
-            <div class="contact-col">
+            <!-- <div class="contact-col">
               <div class="upper-contact">
                 <img src="./assets/contacts/digitalsvg.svg" alt="" />
               </div>
@@ -1271,7 +1435,7 @@
                   ></a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="company-loaction mb-5">
             <div class="iframe-container">
@@ -1289,7 +1453,6 @@
           </div>
         </div>
       </section>
-    
 
       <footer class="footer-main">
         <div class="auto-container">
@@ -1531,80 +1694,99 @@
         window.location.href = "./pages/aisol.html";
       });
     </script>
-<!-- script for popup form-->
-<script>
-  // Function to show the popup modal after 5 seconds
-  window.onload = function() {
-      // Check if the modal has already been shown in the current session
-      if (!sessionStorage.getItem('modalShown')) {
-          setTimeout(function() {
-              document.getElementById('popupModal').style.display = 'flex';
-              // Store a flag in sessionStorage to prevent it from showing again during this session
-              sessionStorage.setItem('modalShown', 'true');
+    <!-- script for popup form-->
+    <script>
+      // Function to show the popup modal after 5 seconds
+      window.onload = function () {
+        // Check if the modal has already been shown in the current session
+        if (!sessionStorage.getItem("modalShown")) {
+          setTimeout(function () {
+            document.getElementById("popupModal").style.display = "flex";
+            // Store a flag in sessionStorage to prevent it from showing again during this session
+            sessionStorage.setItem("modalShown", "true");
           }, 5000);
-      }
-  };
+        }
+      };
 
-  // Function to close the modal
-  document.getElementById('closeModal').onclick = function() {
-      document.getElementById('popupModal').style.display = 'none';
-  };
+      // Function to close the modal
+      document.getElementById("closeModal").onclick = function () {
+        document.getElementById("popupModal").style.display = "none";
+      };
 
-  // Optional: Close modal when clicking outside of it
-  // window.onclick = function(event) {
-  //     var modal = document.getElementById('popupModal');
-  //     if (event.target == modal) {
-  //         modal.style.display = 'none';
-  //     }
-  // };
-</script>
+      // Optional: Close modal when clicking outside of it
+      // window.onclick = function(event) {
+      //     var modal = document.getElementById('popupModal');
+      //     if (event.target == modal) {
+      //         modal.style.display = 'none';
+      //     }
+      // };
+    </script>
 
+    <!-- google sheet -->
+    <script>
+      $("#popupForm").submit((e) => {
+        e.preventDefault();
 
-<!-- google sheet -->
-<script>
-  $("#popupForm").submit((e) => {
-      e.preventDefault();
-      
-      const submitButton = $("#popupForm").find("button[type='submit']");
-      submitButton.prop("disabled", true).text("Submitting..."); // Disable button and change text
-      
-      $("#loadingSpinner").show(); // Show loading spinner
+        const submitButton = $("#popupForm").find("button[type='submit']");
+        submitButton.prop("disabled", true).text("Submitting..."); // Disable button and change text
 
-      $.ajax({
+        $("#loadingSpinner").show(); // Show loading spinner
+
+        $.ajax({
           url: "https://script.google.com/macros/s/AKfycbzNF49RMEjhRBvDtcCDbumt9EN0wemqJVdceg0QPU5Aa9jVhN0J4FovFZKuNWPHSy6I/exec",
           data: $("#popupForm").serialize(),
           method: "post",
-          
-          success: function (response) {
-              // Hide the modal
-              document.getElementById("popupModal").style.display = "none";
-              // Reset the form
-              $("#popupForm")[0].reset();
-              // Re-enable the button and reset text
-              submitButton.prop("disabled", false).text("Submit");
-              $("#loadingSpinner").hide(); // Hide loading spinner
 
-              // Optionally redirect or show a success message
-              // window.location.href = "https://google.com";
+          success: function (response) {
+            // Hide the modal
+            document.getElementById("popupModal").style.display = "none";
+            // Reset the form
+            $("#popupForm")[0].reset();
+            // Re-enable the button and reset text
+            submitButton.prop("disabled", false).text("Submit");
+            $("#loadingSpinner").hide(); // Hide loading spinner
+
+            // Optionally redirect or show a success message
+            // window.location.href = "https://google.com";
           },
           error: function (err) {
-              alert("Something went wrong");
-              // Re-enable the button and reset text
-              submitButton.prop("disabled", false).text("Submit");
-              $("#loadingSpinner").hide(); // Hide loading spinner
-          }
+            alert("Something went wrong");
+            // Re-enable the button and reset text
+            submitButton.prop("disabled", false).text("Submit");
+            $("#loadingSpinner").hide(); // Hide loading spinner
+          },
+        });
       });
-  });
-</script>
-
-
-
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const track = document.getElementById("carouselTrack");
+      const totalSlides = track.children.length;
+      let currentIndex = 0;
+
+      function updateCarousel() {
+        const offset = -currentIndex * 100;
+        track.style.transform = `translateX(${offset}%)`;
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+      }
+
+      // Auto-play every 5 seconds
+      setInterval(nextSlide, 5000);
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -1632,6 +1814,5 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-  </body> 
-  
+  </body>
 </html>

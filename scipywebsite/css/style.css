@@ -27,7 +27,7 @@ body {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   z-index: 9;
-  background-color: #0092ff;
+  background-color: #0032e7;
 }
 .Gotohome a {
   color: #fff;
@@ -106,7 +106,7 @@ body {
   bottom: 15px;
   width: 80px;
   height: 80px;
-  background-color: #0092ff;
+  background-color: #0032e7;
   border-radius: 50%;
   z-index: 8;
 }
@@ -126,17 +126,17 @@ body {
   width: 50px;
   height: 50px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  background-color: #0092ff;
+  background-color: #0032e7;
   border-radius: 50%;
   z-index: 9;
   transition: all 0.3s ease;
 }
 .whatsapp-btn:hover {
   background-color: #fff;
-  color: #0092ff;
+  color: #0032e7;
 }
 .whatsapp-btn:hover a {
-  color: #0092ff;
+  color: #0032e7;
 }
 .whatsapp-btn a {
   transition: all 0.3s ease;
@@ -224,26 +224,26 @@ body {
   transition: all 0.3s ease;
 }
 .menu-list ul li a:hover {
-  color: #0092ff;
+  color: #0032e7;
 }
 .menu-list ul li a.active {
-  color: #0092ff;
-  border-bottom: 2px solid #0092ff;
+  color: #0032e7;
+  border-bottom: 2px solid #0032e7;
 }
 .quote-btn a {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  background: linear-gradient(to bottom, #0092ff 50%, transparent 50%);
+  background: linear-gradient(to bottom, #0032e7 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: 0% 100%;
   font-weight: 700;
   padding: 8px 12px;
   border-radius: 30px;
-  color: #0092ff;
+  color: #0032e7;
   cursor: pointer;
   transition: all 0.4s ease;
-  border: 1px solid #0092ff;
+  border: 1px solid #0032e7;
 }
 
 .quote-btn a:hover {
@@ -391,7 +391,7 @@ body {
 .sidebar-menu li a {
   width: 100%;
   text-decoration: none;
-  color: #0092ff;
+  color: #0032e7;
   font-size: 20px;
   transition: all 0.3s ease;
   padding: 8px;
@@ -403,7 +403,7 @@ body {
 }
 
 .sidebar-menu a:hover {
-  background-color: #0092ff;
+  background-color: #0032e7;
   color: #fff;
 }
 .service-li {
@@ -420,7 +420,7 @@ body {
 
 .sidemenu-btn i {
   font-size: 32px;
-  color: #0092ff;
+  color: #0032e7;
 }
 
 /* .sidemenu-btn span {
@@ -457,9 +457,9 @@ body {
   max-width: max-content;
 }
 .h1-large {
-  font-size: 102px;
+  font-size: 10px;
   color: #1d2c38;
-  font-family: "Inter", sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
   font-weight: 700;
   margin: 0 0 28px;
 }
@@ -482,14 +482,14 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 15px 36px;
-  background: linear-gradient(to top, #0092ff 50%, #223150 50%);
+  background: linear-gradient(to top, #0032e7 50%, #223150 50%);
   background-size: 100% 200%;
   background-position: 100% 0%;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   border-radius: 50px;
-  border: #0092ff 1px solid;
+  border: #0032e7 1px solid;
   transition: all 0.3s ease;
   overflow: hidden;
 }
@@ -544,8 +544,8 @@ body {
   background-color: #5e6576 !important;
 }
 .owl-dots button.owl-dot.active span {
-  background-color: #0092ff !important;
-  background-image: linear-gradient(to right, #ff6600, #0092ff);
+  background-color: #0032e7 !important;
+  background-image: linear-gradient(to right, #ff6600, #0032e7);
   width: 12px;
   height: 12px;
   top: 1px;
@@ -595,7 +595,7 @@ body {
   align-items: flex-start;
   width: 500px !important;
   height: 400px !important;
-  background: linear-gradient(to left, #fff 50%, #0092ff 50%) right;
+  background: linear-gradient(to left, #fff 50%, #0032e7 50%) right;
   background-size: 200%;
   border-radius: 20px;
   margin: 0 15px;
@@ -606,11 +606,50 @@ body {
   transition: all 0.4s ease;
 }
 .cards:hover {
-  background-color: #0092ff;
+  background-color: #0032e7;
   background-position: left;
+}
+.logo-divs{
+  width: 100%;
+  height: 100px;
+}
+.logo-main-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 .card-lower:hover {
   cursor: pointer;
+}
+.logo-container{
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 10px;
+
+
+}
+.logo-icon{
+  height: 40px;
+  width: 40px;
+}
+.logo-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.logo-content-p{
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 200;
+  padding-left: 5px;
+}
+.logo-icon img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 @-webkit-keyframes flip-scale-down-ver {
   0% {
@@ -715,14 +754,14 @@ body {
 .fa-code-branch,
 .fa-brain {
   font-size: 64px;
-  color: #0092ff;
+  color: #0032e7;
 }
 
 /* About Us section styling */
 
 .aboutus-sect {
   width: 100%;
-  padding: 115px 0 82px;
+  padding: 115px 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -756,7 +795,7 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   margin: 0;
-  color: #0092ff;
+  color: #0032e7;
   font-weight: 600;
   letter-spacing: 0.8rem;
 }
@@ -769,16 +808,18 @@ body {
 .txt-contain p {
   font-size: 16px;
   color: #393939;
-  margin: 15px 0 50px;
+  margin: 15px 0 ;
 }
 .aboutus-btn {
   margin: 5px 0 0;
+  margin-top: 50px;
+
 }
 .aboutus-btn a {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  background: linear-gradient(to bottom, #f3f4f5 50%, #0092ff 50%);
+  background: linear-gradient(to bottom, #f3f4f5 50%, #0032e7 50%);
   background-size: 100% 200%;
   background-position: 0% 100%;
   font-weight: 500;
@@ -790,7 +831,7 @@ body {
   border: 1px solid #f3f4f5;
 }
 .aboutus-btn a:hover {
-  color: #0092ff;
+  color: #0032e7;
   background-position: 0% 0%;
 }
 
@@ -811,7 +852,7 @@ body {
   margin: 0 0 45px;
 }
 .sec-title-gallery {
-  color: #0092ff;
+  color: #0032e7;
   font-weight: 600;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
@@ -832,7 +873,7 @@ body {
   position: relative;
 }
 .blue-item {
-  background-color: #0092ff;
+  background-color: #0032e7;
   width: 80px;
   height: 4px;
   position: absolute;
@@ -889,7 +930,7 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #0092ff 0%, #5e6576 100%);
+  background: linear-gradient(to right, #0032e7 0%, #5e6576 100%);
   transition: left 0.6s ease;
   pointer-events: none;
   opacity: 0.6;
@@ -993,7 +1034,7 @@ body {
   top: 100%;
   width: 100%;
   height: 100%;
-  background-color: #0092ff;
+  background-color: #0032e7;
   transition: top 0.6s ease;
   pointer-events: none;
   opacity: 1;
@@ -1078,7 +1119,7 @@ body {
   border: 2px solid #223150;
 }
 .fa-arrow-right.email-arrow {
-  color: #0092ff;
+  color: #0032e7;
   border: 2px solid #223150;
   padding: 15px;
   border-radius: 50%;
@@ -1100,7 +1141,7 @@ body {
   top: 0;
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #0092ff;
+  color: #0032e7;
   background: #124a941a;
   padding: 2px 5px 2px 5px;
   text-align: center;
@@ -1133,7 +1174,7 @@ body {
 
 .blue-footer {
   margin-right: 10px;
-  color: #0092ff;
+  color: #0032e7;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -1180,20 +1221,28 @@ body {
   justify-content: center;
   align-content: center;
 }
+
 .contact-col {
   margin: 15px 15px;
   background-color: #fff;
   border-radius: 20px;
-  border: 1px solid #0092ff;
+  border: 1px solid #0032e7;
   transition: all 0.3s ease;
+  width: 100%;
 }
 .upper-contact {
   overflow: hidden;
+  width: 30%;
+  margin: auto;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .upper-contact img {
-  width: 320px;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
-  border-bottom: 1px solid #0092ff;
+  border-bottom: 1px solid #0032e7;
   transition: all 0.4s ease-in-out;
 }
 .upper-contact img:hover {
@@ -1202,6 +1251,10 @@ body {
 }
 .lower-contact {
   padding: 35px 30px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .lower-contact h5 {
@@ -1209,14 +1262,15 @@ body {
 }
 .lower-contact h5 a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   color: #1d2c38;
   transition: all 0.3s ease;
+  text-align: center
 }
 .lower-contact h5 a:hover {
-  color: #0092ff;
+  color: #0032e7;
   border-bottom: 2px solid #172530;
   cursor: pointer;
 }
@@ -1229,18 +1283,19 @@ body {
   transition: all 0.4s ease;
 }
 .lower-contact p:hover {
-  color: #0092ff;
+  color: #0032e7;
   cursor: pointer;
 }
 .lower-contact p span {
   margin-left: 10px;
+  font-size: 20px;
 }
 .contact-us {
   margin-top: 30px;
 }
 .contact-us a {
   font-size: 18px;
-  color: #0092ff;
+  color: #0032e7;
   font-weight: 700;
   font-family: "Inter", sans-serif;
   text-decoration: none;
@@ -1250,7 +1305,7 @@ body {
 }
 .contact-us a:hover {
   color: #1d2c38;
-  border-bottom: 2px solid #0092ff;
+  border-bottom: 2px solid #0032e7;
   border-radius: 20px;
   padding: 10px;
 }
@@ -1298,7 +1353,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 115px 0 80px;
+  padding: 55px 0 80px;
 }
 .tech-heading {
   font-size: 24px;
@@ -1371,7 +1426,7 @@ body {
     padding: 0 12px;
   }
   .h1-large {
-    font-size: 82px;
+    font-size: 52px;
   }
   .home-card-title {
     font-size: 24px;
@@ -1394,7 +1449,7 @@ body {
   }
   .fixed-img {
     position: absolute;
-    left: 60%;
+    left: 50%;
   }
   .main-footer-widgets {
     display: flex;
@@ -1408,7 +1463,7 @@ body {
 
 .Clients-Section {
   width: 100%;
-  padding: 110px 0 180px;
+  padding: 50px 0 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1418,15 +1473,214 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 .clients-title h3 {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #0092ff;
+  color: #0032e7;
   letter-spacing: 0.8rem;
+}
+.content{
+  overflow: hidden;
+}
+.carousel-header-google {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px
+
+}
+.carousel-container {
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.image-heading-container-google {
+  display: flex;
+  align-items: center;
+}
+.link-container a{
+text-decoration: none;
+padding: 10px 20px;
+background-color: rgb(25, 123, 255);;
+border-radius: 20px;
+color: white;
+}
+.google-details-google{
+  margin-bottom: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+  width: 90%;
+  margin: auto;
+  background-color: rgb(246, 246, 248); 
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.star-size {
+  margin-left: 5px;
+}
+.start-point-google {
+  display: flex;
+  align-items: center;
+}
+
+.image-container-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 90px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.review-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.review-item {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-stars {
+  color: #fbbf24;
+  font-size: 20px;
+}
+
+.review-text {
+  font-size: 16px;
+  color: #333;
+  margin: 15px 0;
+}
+
+.review-author {
+  font-weight: bold;
+  font-size: 14px;
+  color: #666;
+}
+
+.nav-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background-color: #1d4ed8;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background-color: #2563eb;
+}
+.carousel-section{
+  overflow: hidden;
+}
+#about-scipy{
+  width: 100%;
+  overflow:hidden;
+}
+.about-container-1{
+  width: 100%;
+  overflow: hidden;
+}
+.sub-about-container-1{
+  width: 90%;
+  margin: auto;
+}
+.sub-contents-about-container-1{
+  padding: 50px 0px
+}
+.heading-sub{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.first-content-about{
+padding: 10px;
+background-color: #E7EFFC;
+width: max-content;
+color: #0032e7;
+border-radius: 10px;
+}
+.second-content-about{
+  text-align: center;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+}
+.second-content-about h3{
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 700;
+
+}
+.second-content-about h3 span{
+  color: #0032e7;
+}
+.third-content-about{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-about{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-heading-about{
+  padding: 0 30px;
+}
+.card-heading-about h4{
+text-align: center;
+word-wrap: break-word;
+font-size: 20px;
+font-weight: 600;
+}
+.card-icon{
+  height: 50px;
+  width: 50px;
+  margin: 5px 0;
+}
+.card-icon img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card-descrition-about-p{
+  margin-top: 10px;
+  text-align: center;
+  padding: 0 25px;
+  line-height: 25px;
 }
 
 @media screen and (max-width: 1248px) {
@@ -1587,6 +1841,9 @@ body {
   .gallery-title-head {
     font-size: 34px;
   }
+  .card-about{
+    flex-basis: 50%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1609,7 +1866,7 @@ body {
   .sidemenu-btn {
     display: block;
     margin-left: 20px;
-    /* background-color: #0092ff; */
+    /* background-color: #0032e7; */
     z-index: 2;
   }
   .open-sidebar {
@@ -1663,6 +1920,7 @@ body {
 
   #moving-home-image {
     width: 300px;
+    margin-bottom: 20px;
   }
   .services-heading-text {
     font-size: 38px;
@@ -1742,8 +2000,33 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
+  .second-content-about h3{
+    font-size: 28px;
+  }
+  .review-card{
+    flex-direction:column ;
+  }
 
+}
+@media screen and (max-width: 600px) {
+  .card-about{
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
+  .google-details-google{
+    flex-direction: column;
+    gap:30px;
+  }
+  .start-point-google {
+    justify-content: center;
+  }
+.lower-contact h5 a {
+font-size: 20px;
+}
+.upper-contact {
+  width: 60%;
+}
+}
 @media screen and (max-width: 400px) {
   .form-group input {
     padding: 10px;
@@ -1752,4 +2035,5 @@ body {
     color: #fff;
     border: 2px solid #223150;
   }
+  
 }

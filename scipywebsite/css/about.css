@@ -248,9 +248,10 @@ h3.sec-title-gallery {
   padding: 0 12px;
 }
 .about-clear-col i {
-  font-size: 60px;
-  color: #0092ff;
+  font-size: 25px;
+  color: #5409DA;
   transition: all 0.3s ease;
+  padding: 10px;
 }
 .icon-div i {
   font-size: 30px;
@@ -611,6 +612,75 @@ h3.sec-title-gallery {
   color: #0092ff;
   letter-spacing: 0.4rem;
 }
+
+
+.why-luminar {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.why-luminar h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #6c2eb9;
+  margin-bottom: 30px;
+}
+
+.why-luminar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-luminar li {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.05rem;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #6c2eb9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .why-luminar {
+    padding: 25px 15px;
+  }
+
+  .why-luminar h2 {
+    font-size: 1.5rem;
+  }
+
+  .why-luminar li {
+    font-size: 1rem;
+  }
+
+  .icon {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-luminar li {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .icon {
+    margin-top: 2px;
+  }
+}
+
+
 
 @media screen and (max-width: 1400px) {
   .auto-container {

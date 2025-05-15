@@ -1,0 +1,185 @@
+.zigzag-container {
+    margin: 50px 0;
+    width: 100%;
+}
+
+.zigzag-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zigzag-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.zigzag-content {
+    flex: 1 1 50%;
+    padding: 40px;
+    min-width: 300px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.zigzag-content[loading="lazy"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #0a2342;
+    position: relative;
+}
+
+.content-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #0032e7;
+    transition: width 0.3s ease;
+}
+
+.zigzag-item:hover .content-title::after {
+    width: 80px;
+}
+
+.content-text {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    transition: transform 0.3s ease;
+}
+
+.zigzag-item:hover .content-text {
+    transform: translateX(5px);
+}
+
+.zigzag-image {
+    flex: 1 1 50%;
+    padding: 20px;
+    min-width: 300px;
+    perspective: 1000px;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform-style: preserve-3d;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform-origin: center center;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(67, 68, 70, 0.2) 0%, rgba(0,50,231,0) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Creative Image Hover Effects */
+.zigzag-item:hover .feature-image {
+    transform: scale(1.05) rotate(1deg);
+    filter: brightness(1.05) contrast(1.05);
+}
+
+.zigzag-item:hover .image-overlay {
+    opacity: 1;
+    animation: overlayShine 1.5s ease;
+}
+
+@keyframes overlayShine {
+    0% {
+        transform: translateX(-100%) skewX(-15deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateX(100%) skewX(-15deg);
+        opacity: 0;
+    }
+}
+
+/* Content Lazy Loading */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Alternate layout for zig-zag effect */
+.zigzag-item:nth-child(even) .zigzag-content {
+    order: 2;
+}
+
+.zigzag-item:nth-child(even) .zigzag-image {
+    order: 1;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+    .zigzag-content, 
+    .zigzag-image {
+        flex: 1 1 100%;
+        min-width: auto;
+    }
+    
+    .zigzag-item:nth-child(even) .zigzag-content,
+    .zigzag-item:nth-child(even) .zigzag-image {
+        order: 0;
+    }
+    
+    .zigzag-content {
+        padding: 30px 20px;
+    }
+    
+    .content-title {
+        font-size: 1.6rem;
+    }
+    
+    .content-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .zigzag-content {
+        padding: 25px 15px;
+    }
+    
+    .content-title {
+        font-size: 1.4rem;
+    }
+}

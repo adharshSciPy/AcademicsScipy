@@ -240,20 +240,20 @@
   gap: 20px;
 }
 
-.form-group {
+.form-groupv1 {
   display: flex;
   flex-direction: column;
 }
 
-.form-group label {
+.form-groupv1 label {
   margin-bottom: 6px;
   font-weight: 600;
   color: #333;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.form-groupv1 input,
+.form-groupv1 select,
+.form-groupv1 textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;

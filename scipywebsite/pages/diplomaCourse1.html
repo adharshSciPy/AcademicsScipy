@@ -5,6 +5,7 @@
     
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="course" content="Web Development" />
 
     <link rel="stylesheet" href="../css/about.css" />
     <link rel="stylesheet" href="../css/courses.css">
@@ -367,7 +368,7 @@
           </div>
         </div>
       </div>
-      <div class="modal-overlay" id="brochureModal" style="display: none;">
+     <div class="modal-overlay" id="brochureModal" style="display: none;">
   <div class="modal-content">
     <span class="close-modal">&times;</span>
     <h2>Download Brochure</h2>
@@ -670,23 +671,35 @@ arrows.forEach((arrow) => {
 });
 
       </script>
-      <script>
+    <script>
   const tabs = document.querySelectorAll('.course-aside-single');
   const contents = document.querySelectorAll('.course-tab-content');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      // Remove active class from all
       tabs.forEach(t => t.classList.remove('active'));
       contents.forEach(c => c.style.display = 'none');
 
-      // Add active class to current
       tab.classList.add('active');
       const target = tab.getAttribute('data-tab');
       document.getElementById(target).style.display = 'block';
     });
   });
+
+  const applyBtn = document.querySelector('.left-button');
+  applyBtn.addEventListener('click', () => {
+    const featuresTab = document.querySelector('[data-tab="features"]');
+    featuresTab.click();
+
+    const featuresSection = document.getElementById('features');
+    const yOffset = -100; // height of fixed navbar or padding adjustment
+    const y = featuresSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
 </script>
+
+
  <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Get modal elements
@@ -900,79 +913,90 @@ arrows.forEach((arrow) => {
 </script>
 <!-- brochure download -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Get all modal elements
+document.addEventListener('DOMContentLoaded', function () {
   const modal = document.getElementById('brochureModal');
   const downloadBtn = document.querySelector('.download-brochure');
   const closeModal = document.querySelector('.close-modal');
   const brochureForm = document.querySelector('.brochure-form');
-  
-  // Show modal when download button is clicked
-  downloadBtn.addEventListener('click', function() {
+  const submitBtn = brochureForm.querySelector('button[type="submit"]'); // Get submit button
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzCNAHDf-qm02Z9VSSEvqP3orMimANp3LXYIQt5qgo7kpBNYAfgBwkuQqBxx0NjmeCHAg/exec';
+
+  downloadBtn.addEventListener('click', function () {
     modal.style.display = 'flex';
   });
-  
-  // Hide modal when close button is clicked or clicking outside
+
   function closeModalFn() {
     modal.style.display = 'none';
   }
-  
+
   closeModal.addEventListener('click', closeModalFn);
-  modal.addEventListener('click', function(e) {
+
+  modal.addEventListener('click', function (e) {
     if (e.target === modal) {
       closeModalFn();
     }
   });
 
-  // Handle form submission and PDF download
-  brochureForm.addEventListener('submit', function(e) {
+  brochureForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    
-    // Get form values
+
     const name = document.getElementById('brochure-name').value.trim();
     const phone = document.getElementById('brochure-phone').value.trim();
-    
-    // Basic validation
-    if (!name || !phone) {
+    const course = document.querySelector('meta[name="course"]').getAttribute('content').trim();
+
+    if (!name || !phone || !course) {
       alert('Please fill in all required fields.');
       return;
     }
-    
-    // Show success message
-    alert('Thank you! Your brochure download will start shortly.');
-    
-    // Trigger PDF download
-    const link = document.createElement('a');
-    link.href = '/AcademicsScipy/scipywebsite/assets/brochure/Functions.pdf';
-    link.download = 'brochure.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    
-    // Close modal and reset form
-    closeModalFn();
-    brochureForm.reset();
-    
-    // Here you could also add code to send the form data to your server
-    // Example: sendFormData(name, phone);
+
+    // Add loading state
+    submitBtn.disabled = true;
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Downloading...';
+
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('phone', phone);
+    formData.append('course', course);
+
+    fetch(scriptURL, {
+      method: 'POST',
+      body: formData
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.result === 'success') {
+          alert('Thank you! Your brochure download will start shortly.');
+
+          const link = document.createElement('a');
+          link.href = '/AcademicsScipy/scipywebsite/assets/brochure/Functions.pdf';
+          link.download = 'brochure.pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+
+          closeModalFn();
+          brochureForm.reset();
+        } else {
+          console.error('Submission failed. Response data:', data);
+          alert('Failed to submit. Please try again.');
+        }
+      })
+      .catch(error => {
+        console.error('Fetch error:', error);
+        alert('An error occurred. Please check the console for details.');
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      });
   });
-  
-  // Optional: Function to send form data to server
-  function sendFormData(name, phone) {
-    // This would typically be an AJAX call to your backend
-    console.log('Form data to be sent:', { name, phone });
-    // fetch('/submit-brochure-request', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ name, phone })
-    // }).then(response => {
-    //   console.log('Submission successful');
-    // }).catch(error => {
-    //   console.error('Error:', error);
-    // });
-  }
 });
 </script>
+
+
+
 
 
 

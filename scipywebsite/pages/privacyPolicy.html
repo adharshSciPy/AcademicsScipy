@@ -169,7 +169,7 @@
           </div>
           <div class="auto-container">
             <div class="page-title">
-              <h1 class="title-abt">Events</h1>
+              <h1 class="title-abt">Our Policy</h1>
               <!-- <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><p class="page-about">About us</p></li>
@@ -178,43 +178,165 @@
           </div>
         </div>
       </section>
-    <div class="first-outer">
-  <section class="privacy-policy">
-    <h1>Privacy Policy</h1>
-    <p>Last updated: May 16, 2025</p>
+    <div class="privacy-container">
+        <div class="privacy-tabs">
+            <button class="privacy-tab-btn active" data-tab="privacy">Privacy Policy</button>
+            <button class="privacy-tab-btn" data-tab="terms">Terms & Conditions</button>
+        </div>
 
-    <h2>1. Introduction</h2>
-    <p>We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.</p>
+        <div class="privacy-tab-content active" id="privacy">
+            <div class="privacy-wrapper">
+                <div class="privacy-header">
+                    <h1>Privacy Policy</h1>
+                    <p class="privacy-last-updated">Last updated: <span id="privacyDate">May 16, 2025</span></p>
+                </div>
 
-    <h2>2. Information We Collect</h2>
-    <ul>
-      <li>Personal identification information (Name, email address, phone number, etc.)</li>
-      <li>Usage data such as browsing behavior and interactions with our services</li>
-      <li>Cookies and tracking technologies to improve user experience</li>
-    </ul>
+                <div class="privacy-content">
+                    <h2 class="privacy-section-title">1. Introduction</h2>
+                    <div class="privacy-section-content">
+                        <p>We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.</p>
+                        <p>Our company operates with transparency and integrity, ensuring that your personal information is handled responsibly and in accordance with applicable data protection laws.</p>
+                    </div>
 
-    <h2>3. How We Use Your Information</h2>
-    <p>We use your data to:</p>
-    <ul>
-      <li>Provide and maintain our services</li>
-      <li>Communicate with you</li>
-      <li>Improve our website and services</li>
-      <li>Protect against fraud and abuse</li>
-    </ul>
+                    <h2 class="privacy-section-title">2. Information We Collect</h2>
+                    <div class="privacy-section-content">
+                        <p>We collect various types of information to provide and improve our services:</p>
+                        <ul>
+                            <li><strong>Personal identification information</strong> (Name, email address, phone number, etc.)</li>
+                            <li><strong>Usage data</strong> such as browsing behavior and interactions with our services</li>
+                            <li><strong>Cookies and tracking technologies</strong> to improve user experience</li>
+                            <li><strong>Device information</strong> including IP address, browser type, and operating system</li>
+                            <li><strong>Location data</strong> (when permitted by your device settings)</li>
+                        </ul>
+                    </div>
 
-    <h2>4. Data Security</h2>
-    <p>We implement security measures to protect your information from unauthorized access, alteration, or destruction.</p>
+                    <h2 class="privacy-section-title">3. How We Use Your Information</h2>
+                    <div class="privacy-section-content">
+                        <p>We use your data for the following purposes:</p>
+                        <ul>
+                            <li>Provide and maintain our services</li>
+                            <li>Communicate with you about updates, security alerts, and support messages</li>
+                            <li>Improve our website and services through analytics</li>
+                            <li>Protect against fraud and abuse of our systems</li>
+                            <li>Personalize your experience with content and product recommendations</li>
+                            <li>Comply with legal obligations and enforce our terms of service</li>
+                        </ul>
+                    </div>
 
-    <h2>5. Your Rights</h2>
-    <p>You have the right to access, correct, or delete your personal information. Please contact us to exercise these rights.</p>
+                    <h2 class="privacy-section-title">4. Data Security</h2>
+                    <div class="privacy-section-content">
+                        <p>We implement <span class="privacy-highlight">industry-standard security measures</span> to protect your information from unauthorized access, alteration, or destruction:</p>
+                        <ul>
+                            <li>Encryption of sensitive data in transit and at rest</li>
+                            <li>Regular security audits and vulnerability testing</li>
+                            <li>Access controls and authentication protocols</li>
+                            <li>Employee training on data protection best practices</li>
+                        </ul>
+                        <p>While we strive to protect your personal information, no method of transmission over the Internet or electronic storage is 100% secure.</p>
+                    </div>
 
-    <h2>6. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We encourage you to review it periodically.</p>
+                    <h2 class="privacy-section-title">5. Your Rights</h2>
+                    <div class="privacy-section-content">
+                        <p>Under data protection laws, you have certain rights regarding your personal information:</p>
+                        <ul>
+                            <li><strong>Access:</strong> Request a copy of the personal data we hold about you</li>
+                            <li><strong>Rectification:</strong> Correct inaccurate or incomplete data</li>
+                            <li><strong>Erasure:</strong> Request deletion of your personal data under certain conditions</li>
+                            <li><strong>Restriction:</strong> Limit how we use your data</li>
+                            <li><strong>Portability:</strong> Receive your data in a structured, commonly used format</li>
+                            <li><strong>Objection:</strong> Object to certain processing activities</li>
+                        </ul>
+                        <p>To exercise these rights, please contact us at <a href="mailto:privacy@example.com">privacy@example.com</a>. We may need to verify your identity before processing your request.</p>
+                    </div>
 
-    <h2>7. Contact Us</h2>
-    <p>If you have any questions about this policy, please contact us at <a href="mailto:privacy@example.com">privacy@example.com</a>.</p>
-  </section>
-</div>
+                    <h2 class="privacy-section-title">6. Changes to This Policy</h2>
+                    <div class="privacy-section-content">
+                        <p>We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. When we make changes, we'll update the "Last updated" date at the top of this policy.</p>
+                        <p>For significant changes, we'll provide more prominent notice (such as email notification or a banner on our website). We encourage you to review this policy regularly to stay informed about how we're protecting your information.</p>
+                        <div id="policyHistory">
+                            <p><strong>Previous versions:</strong></p>
+                            <ul>
+                                <li><a href="#" class="version-link">Version 1.0 - January 2024</a></li>
+                                <li><a href="#" class="version-link">Version 1.1 - August 2024</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2 class="privacy-section-title">7. Contact Us</h2>
+                    <div class="privacy-section-content">
+                        <p>If you have any questions about this policy or our privacy practices, please don't hesitate to contact us:</p>
+                        <ul>
+                            <li>Email: <a href="mailto:privacy@example.com">privacy@example.com</a></li>
+                            <li>Phone: +1 (555) 123-4567</li>
+                            <li>Mail: Privacy Office, 123 Business Ave, Suite 100, San Francisco, CA 94107</li>
+                        </ul>
+                        <p>We typically respond to privacy inquiries within <span id="responseTime">48</span> hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-tab-content" id="terms">
+            <div class="terms-wrapper">
+                <div class="terms-header">
+                    <h1>Terms & Conditions</h1>
+                    <p class="terms-last-updated">Last updated: <span id="termsDate">May 16, 2025</span></p>
+                </div>
+
+                <div class="terms-content">
+                    <h2 class="terms-section-title">1. Acceptance of Terms</h2>
+                    <div class="terms-section-content">
+                        <p>By accessing or using our services, you agree to be bound by these Terms and Conditions. If you disagree with any part of the terms, you may not access the service.</p>
+                    </div>
+
+                    <h2 class="terms-section-title">2. User Responsibilities</h2>
+                    <div class="terms-section-content">
+                        <p>As a user of our services, you agree to:</p>
+                        <ul>
+                            <li>Provide accurate and complete information when required</li>
+                            <li>Maintain the confidentiality of your account credentials</li>
+                            <li>Use the service only for lawful purposes</li>
+                            <li>Not engage in any activity that disrupts or interferes with our services</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="terms-section-title">3. Intellectual Property</h2>
+                    <div class="terms-section-content">
+                        <p>All content included on this platform, such as text, graphics, logos, and software, is the property of our company and protected by intellectual property laws.</p>
+                    </div>
+
+                    <h2 class="terms-section-title">4. Limitation of Liability</h2>
+                    <div class="terms-section-content">
+                        <p>We shall not be liable for any indirect, incidental, special, consequential or punitive damages resulting from your use of or inability to use the service.</p>
+                    </div>
+
+                    <h2 class="terms-section-title">5. Governing Law</h2>
+                    <div class="terms-section-content">
+                        <p>These terms shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law provisions.</p>
+                    </div>
+
+                    <h2 class="terms-section-title">6. Changes to Terms</h2>
+                    <div class="terms-section-content">
+                        <p>We reserve the right to modify these terms at any time. We will provide notice of any changes by updating the "Last updated" date of these Terms.</p>
+                    </div>
+
+                    <h2 class="terms-section-title">7. Contact Information</h2>
+                    <div class="terms-section-content">
+                        <p>For any questions about these Terms, please contact us at:</p>
+                        <ul>
+                            <li>Email: <a href="mailto:legal@example.com">legal@example.com</a></li>
+                            <li>Phone: +1 (555) 987-6543</li>
+                            <li>Mail: Legal Department, 123 Business Ave, Suite 100, San Francisco, CA 94107</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <!-- <div class="back-to-top" id="backToTop">↑</div> -->
 
 
     
@@ -376,6 +498,75 @@
       </ul>
     </div>
     <script src="../js/Sidebarcollapse.js"></script>
+    <!-- additional script -->
+  <script>  const tabBtns = document.querySelectorAll('.privacy-tab-btn');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons and content
+                document.querySelectorAll('.privacy-tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.privacy-tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Collapsible sections for privacy policy
+        document.querySelectorAll('.privacy-section-title').forEach(title => {
+            title.addEventListener('click', () => {
+                const content = title.nextElementSibling;
+                title.classList.toggle('active');
+                content.classList.toggle('active');
+            });
+        });
+
+        // Collapsible sections for terms and conditions
+        document.querySelectorAll('.terms-section-title').forEach(title => {
+            title.addEventListener('click', () => {
+                const content = title.nextElementSibling;
+                title.classList.toggle('active');
+                content.classList.toggle('active');
+            });
+        });
+
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Dynamic date update
+        const currentDate = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('privacyDate').textContent = currentDate.toLocaleDateString('en-US', options);
+        document.getElementById('termsDate').textContent = currentDate.toLocaleDateString('en-US', options);
+
+        // Simulate response time countdown
+        let time = 48;
+        const responseTimeElement = document.getElementById('responseTime');
+        setInterval(() => {
+            time = time > 24 ? time - 1 : 48;
+            responseTimeElement.textContent = time;
+        }, 3000);
+
+        // Open first section by default in each tab
+        document.querySelectorAll('.privacy-tab-content.active .privacy-section-title').forEach((title, index) => {
+            if (index === 0) title.click();
+        });
+    </script>
    <!-- <script>
   document.addEventListener("DOMContentLoaded", function() {
     const courseCards = document.querySelectorAll('.course-card');

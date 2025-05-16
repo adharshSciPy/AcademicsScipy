@@ -23,7 +23,7 @@
 .portfolio-header h1::after {
     content: '';
     position: absolute;
-    width: 0%;
+    width: 60%;
     height: 3px;
     background: #3498db;
     bottom: -10px;
@@ -52,13 +52,14 @@
 
 /* Portfolio Card */
 .portfolio-card {
-    background: white;
+    background: linear-gradient(135deg, #e0f7fa, #d1c4e9);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .portfolio-card:hover {
     transform: translateY(-5px);
@@ -92,20 +93,36 @@
 
 /* Student Photo */
 .student-photo {
-    width: 120px;
-    background-color: #ecf0f1;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(135deg, #ffecd2, #0032e7);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.student-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .student-photo img {
     width: 100%;
     height: auto;
     border-radius: 50%;
-    border: 3px solid #3498db;
+    border: 4px solid white;
+    transition: border-color 0.3s ease;
 }
+
+.student-photo:hover img {
+    border-color: #2980b9;
+}
+
 
 /* Link Box */
 .link-box {

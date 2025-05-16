@@ -217,6 +217,8 @@
             background: url('../assets/DigitalMarketing.png');
             background-size: fill;
             background-size: 100%;
+            overflow: hidden;
+            background-position: top;
           "
         >
           <div class="header-top">
@@ -252,19 +254,25 @@
           </div>
           <div class="auto-container">
             <div class="page-title">
-              <h1 class="title-abt">Social Media</h1>
+              <h1 class="title-abt">Placement</h1>
               <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><p class="page-about">Social Media</p></li>
+                <li><p class="page-about">Placement</p></li>
               </ul>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="slider-social-main">
+        <div class="slider-social-main" style="background: none">
+          <div
+            class="first-content-about"
+            style="margin: auto; margin-bottom: 20px"
+          >
+            <span>Milestone Achievement</span>
+          </div>
           <div class="social-media-heading">
-            <h1>Our Instagram Feed</h1>
+            <h1 style="color: #0092ff">Our 7000+ Drum Cards</h1>
           </div>
           <div class="slider-container">
             <div class="slider-track">
@@ -285,107 +293,22 @@
               </div>
             </div>
           </div>
+          <div class="contents-placement">
+            <div
+              class="first-content-about"
+              style="margin: auto; margin-top: 40px"
+            >
+              <span>Milestone Achievement</span>
+            </div>
+            <div class="p-contents-placement" style="margin: auto; width: 60%;margin-top: 40px;">
+              <h1 style="color: #0092ff;text-align: center;font-size: 30px;line-height: 50px;">Our mission is to provide 100% placements for students in our specialized courses.</h1>
+            </div>
+          </div>
         </div>
 
         <script src="script.js"></script>
       </section>
-      <section>
-        <div class="slider-social-main" style="padding-top: 0px">
-          <div class="social-media-heading">
-            <h1>Our Facebook Feed</h1>
-          </div>
-          <div class="slider-container">
-            <div class="slider-track-fb">
-              <div class="slide-fb">
-                <img src="../assets/about.people2.png" alt="" />
-              </div>
-              <div class="slide-fb">
-                <img src="../assets/about.people2.png" alt="" />
-              </div>
-              <div class="slide-fb active">
-                <img src="../assets/about.people2.png" alt="" />
-              </div>
-              <div class="slide-fb">
-                <img src="../assets/about.people2.png" alt="" />
-              </div>
-              <div class="slide-fb">
-                <img src="../assets/about.people2.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="slider-social-main" style="padding-top: 0px">
-          <div class="social-media-heading">
-            <h1>Our Youtube Feed</h1>
-          </div>
-          <div class="slider-container">
-            <div class="slider-track-yt">
-              <div class="slide-yt">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/8xyxpgzbstA?si=sPUaIY69lrvySatX"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="slide-yt">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/8xyxpgzbstA?si=sPUaIY69lrvySatX"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="slide-yt active">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/8xyxpgzbstA?si=sPUaIY69lrvySatX"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="slide-yt">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/8xyxpgzbstA?si=sPUaIY69lrvySatX"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="slide-yt">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/8xyxpgzbstA?si=sPUaIY69lrvySatX"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <footer class="footer-main">
         <div class="auto-container">
           <div class="main-footer-widgets">
@@ -499,13 +422,15 @@
       </div>
       <ul class="sidebar-menu">
         <!-- <li><img src="./assets/header-logo.png" alt="Text" /></li> -->
-        <li><a id="home-sidebar" data-page="home" href="../index.html">Home</a></li>
+        <li>
+          <a id="home-sidebar" data-page="home" href="../index.html">Home</a>
+        </li>
         <li class="service-li">
-          <a id="toggle-service" data-page="Services" href="#" 
+          <a id="toggle-service" data-page="Services" href="#"
             >Services <i class="fa-solid fa-arrow-right serv-arrow"></i
           ></a>
 
-          <ul id="menu" class="toogle-ul ">
+          <ul id="menu" class="toogle-ul">
             <li>
               <a href="./pages/websitedev.html" data-page="Service1"
                 >Website Development</a
@@ -568,7 +493,7 @@
           >
         </li>
       </ul>
-    </div>  
+    </div>
     <script src="../js/Sidebarcollapse.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

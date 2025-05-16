@@ -1,4 +1,7 @@
 @import url("./style.css");
+@import url("animate.css");
+@import url("font-awesome.css");
+@import url("collapse.css");
 
 .home-page {
   margin-bottom: 100px;

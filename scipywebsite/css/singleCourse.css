@@ -63,6 +63,7 @@
     grid-template-columns: 29% 70%;
     gap: 20px;
     position: relative;
+    margin-bottom: 20px;
 
   }
   .course-details-asideOne {

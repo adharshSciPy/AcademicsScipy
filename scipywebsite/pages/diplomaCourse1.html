@@ -687,7 +687,7 @@ arrows.forEach((arrow) => {
     });
   });
 </script>
- <script>
+ <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Get modal elements
       const modal = document.getElementById('brochureModal');
@@ -722,9 +722,9 @@ arrows.forEach((arrow) => {
         brochureForm.reset();
       });
     });
-  </script> 
+  </script>  -->
   <!-- script to download pdf -->
-  <script>
+  <!-- <script>
     document.querySelector('.brochure-form').addEventListener('submit', function (e) {
       e.preventDefault(); // prevent page reload
   
@@ -757,7 +757,7 @@ arrows.forEach((arrow) => {
     document.querySelector('.close-modal').addEventListener('click', function () {
       document.getElementById('brochureModal').style.display = 'none';
     });
-  </script> 
+  </script>  -->
   
 <!-- popers -->
 <script>
@@ -900,103 +900,79 @@ arrows.forEach((arrow) => {
 </script>
 <!-- brochure download -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  // Modal handling
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all modal elements
   const modal = document.getElementById('brochureModal');
-  const downloadBtns = document.querySelectorAll('.brochure-download-btn'); // Changed class
+  const downloadBtn = document.querySelector('.download-brochure');
   const closeModal = document.querySelector('.close-modal');
+  const brochureForm = document.querySelector('.brochure-form');
   
-  // Show modal when any download button is clicked
-downloadBtns.forEach(btn => {
-  btn.addEventListener('click', function(e) {
-    console.log('Download button clicked'); // Debug log
-    e.preventDefault(); // Prevent default behavior
+  // Show modal when download button is clicked
+  downloadBtn.addEventListener('click', function() {
     modal.style.display = 'flex';
-    console.log('Modal should be visible now');
   });
-});
   
-  // Hide modal when close button is clicked
-  closeModal.addEventListener('click', function() {
+  // Hide modal when close button is clicked or clicking outside
+  function closeModalFn() {
     modal.style.display = 'none';
-  });
+  }
   
-  // Hide modal when clicking outside
+  closeModal.addEventListener('click', closeModalFn);
   modal.addEventListener('click', function(e) {
     if (e.target === modal) {
-      modal.style.display = 'none';
+      closeModalFn();
     }
   });
 
-  // Form submission handling
-  const brochureForm = document.querySelector(".brochure-form");
-  const submitBtn = brochureForm.querySelector('.submit-btn');
-  const originalBtnText = submitBtn.innerHTML;
-
-  brochureForm.addEventListener("submit", async function (e) {
+  // Handle form submission and PDF download
+  brochureForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Set loading state
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = 'Processing <span class="spinner"></span>';
-
-    const name = document.getElementById("brochure-name").value.trim();
-    const phone = document.getElementById("brochure-phone").value.trim();
-    const courseName = document.querySelector('meta[name="course-name"]').content || 'Unknown Course';
-
+    // Get form values
+    const name = document.getElementById('brochure-name').value.trim();
+    const phone = document.getElementById('brochure-phone').value.trim();
+    
+    // Basic validation
     if (!name || !phone) {
-      alert("Please fill out all fields.");
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalBtnText;
+      alert('Please fill in all required fields.');
       return;
     }
-
-    try {
-      // Submit data to Google Sheets
-    // Change your fetch request to:
-const response = await fetch("https://script.google.com/macros/s/AKfycbxnUy1bDlhLLRWGQRnZGNXqssUPacg_tdH82ksV8t4Kjlqy683v_FnVNwO9N5X81Gx9Rw/exec", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    formType: "brochure",
-    Name: name,
-    Phone: phone,
-    Course: courseName,
-    Timestamp: new Date().toISOString()
-  })
-});
-
-      if (!response.ok) throw new Error('Network response was not ok');
-      
-      const result = await response.json();
-      console.log('Submission result:', result);
-
-      if (result.result === "success") {
-        // Trigger PDF download after successful submission
-        const link = document.createElement('a');
-        link.href = '/AcademicsScipy/scipywebsite/assets/brochure/Functions.pdf';
-        link.download = `${courseName.replace(/\s+/g, '_')}_brochure.pdf`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        
-        brochureForm.reset();
-        modal.style.display = "none";
-      } else {
-        throw new Error(result.error || 'Unknown error occurred');
-      }
-    } catch (error) {
-      console.error("Submission error:", error);
-      alert("Error submitting form: " + error.message);
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalBtnText;
-    }
+    
+    // Show success message
+    alert('Thank you! Your brochure download will start shortly.');
+    
+    // Trigger PDF download
+    const link = document.createElement('a');
+    link.href = '/AcademicsScipy/scipywebsite/assets/brochure/Functions.pdf';
+    link.download = 'brochure.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Close modal and reset form
+    closeModalFn();
+    brochureForm.reset();
+    
+    // Here you could also add code to send the form data to your server
+    // Example: sendFormData(name, phone);
   });
+  
+  // Optional: Function to send form data to server
+  function sendFormData(name, phone) {
+    // This would typically be an AJAX call to your backend
+    console.log('Form data to be sent:', { name, phone });
+    // fetch('/submit-brochure-request', {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: JSON.stringify({ name, phone })
+    // }).then(response => {
+    //   console.log('Submission successful');
+    // }).catch(error => {
+    //   console.error('Error:', error);
+    // });
+  }
 });
-</script> 
+</script>
 
 
 

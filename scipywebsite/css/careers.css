@@ -61,7 +61,7 @@
   list-style-position: outside;
   font-size: 16px;
   font-weight: 500;
-  color: #0092ff;
+  color: #0032E7;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -120,7 +120,7 @@
 
 .pro-col li a::before {
   content: "";
-  background: #0092ff;
+  background: #0032E7;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -170,7 +170,7 @@
 }
 
 .work-section h2 span {
-  color: #a020f0;
+  color: #0032E7;
 }
 
 .card-container {
@@ -196,7 +196,7 @@
 .workcardone h3 {
   font-size: 1.55rem;
   margin-bottom: 10px;
-  color: #5409DA;
+  color: #0032E7;
 }
 
 .workcardone p {
@@ -230,7 +230,7 @@
 .contact-container h2 {
   text-align: center;
   margin-bottom: 30px;
-  color: #5409DA;
+  color: #0032E7;
   font-size: 2rem;
 }
 
@@ -267,7 +267,7 @@
 
 .button[type="submit"] {
   padding: 14px 20px;
-  background-color: #5409DA;
+  background-color: #0032E7;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -277,7 +277,7 @@
 }
 
 .button[type="submit"]:hover {
-  background-color: #5a33a3;
+  background-color: #0032E7;
 }
 
 @media (max-width: 600px) {
@@ -287,7 +287,7 @@
 
   .contact-container h2 {
     font-size: 1.5rem;
-    color: #5a33a3;
+    color: #0032E7;
   }
 
   .form-grid {

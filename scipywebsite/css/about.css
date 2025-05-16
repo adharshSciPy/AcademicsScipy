@@ -117,7 +117,7 @@ h3.sec-title-gallery {
   padding: 0 15px 0 0;
 }
 .page-title ul li a {
-  color: #0092ff;
+  color: #0032E7;
   text-decoration: none;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -134,7 +134,7 @@ h3.sec-title-gallery {
 }
 .page-about::before {
   content: "/";
-  color: #0092ff;
+  color: #0032E7;
   margin-right: 20px;
 }
 
@@ -176,7 +176,7 @@ h3.sec-title-gallery {
   transition: all 0.3s ease;
 }
 .email-header a:hover {
-  color: #0037ff;
+  color: #0032E7;
 }
 .header-top-social {
   margin: 0 0 0 60px;
@@ -217,7 +217,7 @@ h3.sec-title-gallery {
 }
 .about-one-title {
   font-size: 14px;
-  color: #0092ff;
+  color: #0032E7;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -249,7 +249,7 @@ h3.sec-title-gallery {
 }
 .about-clear-col i {
   font-size: 25px;
-  color: #5409DA;
+  color: #0032E7;
   transition: all 0.3s ease;
   padding: 10px;
 }
@@ -264,7 +264,7 @@ h3.sec-title-gallery {
 .about-clear-col h6 {
   font-size: 18px;
   text-wrap: nowrap;
-  color: #2c2c71;
+  color: #0032E7;
   font-weight: 700;
   font-family: "Inter", sans-serif;
   margin: 20px 0 0;
@@ -279,11 +279,11 @@ h3.sec-title-gallery {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color: #0092ff;
-  background: linear-gradient(to bottom, #0092ff 50%, #fff 50%);
+  color: #0032E7;
+  background: linear-gradient(to bottom, #0032E7 50%, #fff 50%);
   background-size: 100% 200%;
   background-position: 0% 100%;
-  border: 1px solid #0092ff;
+  border: 1px solid #0032E7;
   transition: all 0.3s ease;
   padding: 18px 40px;
   border-radius: 30px;
@@ -319,14 +319,14 @@ h3.sec-title-gallery {
 .about-counter p {
   font-size: 14px;
   text-wrap: nowrap;
-  color: #0092ff;
+  color: #0032E7;
   font-family: "Roboto", sans-serif;
   margin: 5px 0 0;
   font-weight: 600;
 }
 .about-3-img {
   width: auto;
-  border: 2px solid #0092ff;
+  border: 2px solid #0032E7;
   border-radius: 30px;
   padding: 0 10px 10px 0;
   margin: 0 0 5px;
@@ -347,7 +347,7 @@ h3.sec-title-gallery {
 }
 
 .about-img-hover {
-  background: linear-gradient(to right, #0092ff 0%, #5e6576 100%);
+  background: linear-gradient(to right, #0032E7 0%, #5e6576 100%);
 }
 .about-4-img {
   display: flex;
@@ -400,7 +400,7 @@ h3.sec-title-gallery {
 .feature-row {
   margin: 0 50px;
   width: 100%;
-  background-color: #0092ff;
+  background-color: #0032E7;
   display: flex;
 
   flex-wrap: wrap;
@@ -424,7 +424,7 @@ h3.sec-title-gallery {
   border-right: 1px solid #ccc; /* Add a right border */
 }
 .grid-item:hover {
-  background-color: #43a9f7;
+  background-color: #0032E7;
 }
 .grid-item:first-child:hover {
   border-radius: 20px 0 0 20px;
@@ -571,7 +571,7 @@ h3.sec-title-gallery {
 }
 .quote-symbol i {
   font-size: 32px;
-  color: #0092ff;
+  color: #0032E7;
 }
 .lower-part {
   display: block;
@@ -609,7 +609,7 @@ h3.sec-title-gallery {
   font-weight: 700;
   text-align: center;
   /* text-wrap: nowrap; */
-  color: #0092ff;
+  color: #0032E7;
   letter-spacing: 0.4rem;
 }
 
@@ -626,7 +626,7 @@ h3.sec-title-gallery {
 .why-luminar h2 {
   text-align: center;
   font-size: 2rem;
-  color: #6c2eb9;
+  color: #0032E7;
   margin-bottom: 30px;
 }
 
@@ -646,7 +646,7 @@ h3.sec-title-gallery {
 .icon {
   font-size: 20px;
   margin-right: 12px;
-  color: #6c2eb9;
+  color: #0032E7;
 }
 
 /* Responsive styles */

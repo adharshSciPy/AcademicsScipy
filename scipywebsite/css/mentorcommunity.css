@@ -1,0 +1,176 @@
+@import url("./about.css");
+
+.hero {
+  background: url("https://via.placeholder.com/1500x300") center/cover no-repeat;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.breadcrumb {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.instructors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 40px;
+}
+/* 
+.card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+} */
+
+/* .card .bg-circle {
+  width: 100%;
+  height: 200px;
+  background: #b45af5;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+  overflow: hidden;
+} */
+
+/* .card img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-top: -100px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #555;
+  margin: 0 5px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0032E7;
+} */
+
+/* ///// */
+
+.trainer-card {
+  padding: 15px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.photo-bg img {
+  width: 100%;
+  border-radius: 10px;
+  background: #c084fc;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 8px 0;
+  color: #0032E7;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 0.9rem;
+}
+
+.info-row p {
+  margin: 0;
+  width: 50%;
+  color: #0032E7;
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.social-icons a {
+  color: #555;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0032E7;
+}
+
+.whatsapp-contact {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.whatsapp-contact span {
+  color: #0032E7;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .card img {
+    width: 100px;
+    margin-top: -80px;
+  }
+}

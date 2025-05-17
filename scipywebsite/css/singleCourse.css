@@ -1,6 +1,7 @@
 .singleCourse-outer{
     background: linear-gradient(to top, #0032e7, #ffffff);
     padding-bottom: 60px; 
+    padding-top: 3rem;
 
 }
   
@@ -143,10 +144,7 @@
     color: #555;
   }
   
- .course-details-asideSecond{
-  
-
- }
+ 
  .course-aside-tabsOuter {
     margin-top: -90px;
     margin-bottom: 40px;
@@ -180,7 +178,9 @@
   }
   .course-content-aside{
     margin-bottom: 1rem;
+    padding-top:1.5rem ;
   }
+
   .content-aside-head-first{
     font-size: 22px;
     font-weight: 600;
@@ -245,6 +245,12 @@ color: #0032e7;
   .course-content-aside.expanded .show-more-btn::before {
     transform: rotate(180deg);
     /* content: "▲"; */
+  }
+  .course-content-module{
+    padding-top: 1.5rem;
+  }
+  .course-review{
+    padding-top: 1.5rem;
   }
   .course-content-modules{
     display: flex;

@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
     <link rel="icon" href="../assets/Scipy Favicon.png" type="image/Favicon" />
-    <link rel="stylesheet" href="../css/blogmain.css" />
-
-    <style>
-      /* Demo Code: */
-    </style>
+    <link rel="stylesheet" href="../css/popup.css" />
+    <link rel="stylesheet" href="../css/port.css" />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -24,13 +21,6 @@
       gtag("js", new Date());
 
       gtag("config", "G-JTWQJKVN82");
-
-      // This adds some nice ellipsis to the description:
-      document
-        .querySelectorAll(".projcard-description")
-        .forEach(function (box) {
-          $clamp(box, { clamp: 6 });
-        });
     </script>
 
     <link
@@ -82,7 +72,6 @@
   <body>
     <div class="sidebar-closer"></div>
     <div class="ping"></div>
-
     <div class="whatsapp-btn">
       <a
         href="https://wa.me/918848080346?text=Hello%2C%20I%20have%20a%20question%20About%20Your%20Services"
@@ -185,16 +174,15 @@
                     >
                   </li>
                   <li>
-                    <a href="./project.html">Projects</a>
-                  </li>
-                  <li>
                     <a
-                      href="./blog.html"
-                      id="blog"
+                      href="./project.html"
                       class="active-link home-color .main-a"
                       style="color: #0092ff"
-                      >Blog</a
+                      >Projects</a
                     >
+                  </li>
+                  <li>
+                    <a href="blog.html" id="blog">Blog</a>
                   </li>
                   <li>
                     <a id="About-us" href="./aboutus.html">About Us</a>
@@ -222,7 +210,7 @@
         <div
           class="about-home"
           style="
-            background: url('../assets/blog.jpg');
+            background: url('../assets/about.people1.png');
             background-position: center center;
             background-size: 100%;
           "
@@ -260,320 +248,384 @@
           </div>
           <div class="auto-container">
             <div class="page-title">
-              <h1 class="title-abt">Blog</h1>
+              <h1 class="title-abt">Portfolio</h1>
               <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><p class="page-about">Blog Page</p></li>
+                <li><p class="page-about">Portfolio Page</p></li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      <section class="projects-done">
-        <div class="blogscontainer">
-          <!-- <div class="blogsmain">
-            <section class="digital-diary-header">
-              <div class="diary-title-wrapper">
-                <div class="text-barDiv">
-                  <span class="gradient-text">Blogs</span>
-                  <div class="blue-bar bar-one"></div>
+      <section>
+             <header class="portfolio-header">
+        <h1>Student Portfolio</h1>
+    </header>
+    
+    <div class="portfolio-container">
+        <!-- Portfolio Card 1 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">John Doe</h2>
+                <p><strong>Course:</strong> Web Development</p>
+                <p><strong>Batch:</strong> WD-2023</p>
+                <p><strong>Start Date:</strong> January 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 5</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
                 </div>
-              </div>
-            </section>
-          </div> -->
-          <div class="blogscardwrapper">
-            <div class="blogcard">
-              <div class="blogcardcontent">
-                <div class="card-image">
-                  <img src="../assets/cardImage1.png" alt="Blog Image" />
-                </div>
-                <div class="carddetails">
-                  <h1 class="h1">Heading 1</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis incidunt, rerum debitis porro aut placeat
-                    voluptatem tempore ratione voluptatum aspernatur blanditiis
-                    sunt pariatur dolor itaque rem voluptas aliquid obcaecati
-                    deleniti. Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Reiciendis incidunt, rerum debitis porro
-                    aut placeat voluptatem tempore ratione voluptatum aspernatur
-                    blanditiis sunt pariatur dolor itaque rem voluptas aliquid
-                    obcaecati deleniti.
-                  </p>
-                  <a class="read" href="">Readmore</a>
-                </div>
-              </div>
-              <div class="blogcardcontent">
-                <div class="card-image">
-                  <img src="../assets/cardImage1.png" alt="Blog Image" />
-                </div>
-                <div class="carddetails">
-                  <h1 class="h1">Heading 2</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis incidunt, rerum debitis porro aut placeat
-                    voluptatem tempore ratione voluptatum aspernatur blanditiis
-                    sunt pariatur dolor itaque rem voluptas aliquid obcaecati
-                    deleniti. Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Reiciendis incidunt, rerum debitis porro
-                    aut placeat voluptatem tempore ratione voluptatum aspernatur
-                    blanditiis sunt pariatur dolor itaque rem voluptas aliquid
-                    obcaecati deleniti.
-                  </p>
-                  <a class="read" href="">Readmore</a>
-                </div>
-              </div>
-              <div class="blogcardcontent">
-                <div class="card-image">
-                  <img src="../assets/cardImage1.png" alt="Blog Image" />
-                </div>
-                <div class="carddetails">
-                  <h1 class="h1">Heading 3</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis incidunt, rerum debitis porro aut placeat
-                    voluptatem tempore ratione voluptatum aspernatur blanditiis
-                    sunt pariatur dolor itaque rem voluptas aliquid obcaecati
-                    deleniti. Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Reiciendis incidunt, rerum debitis porro
-                    aut placeat voluptatem tempore ratione voluptatum aspernatur
-                    blanditiis sunt pariatur dolor itaque rem voluptas aliquid
-                    obcaecati deleniti.
-                  </p>
-                  <a class="read" href="">Readmore</a>
-                </div>
-              </div>
-              <div class="blogcardcontent">
-                <div class="card-image">
-                  <img src="../assets/cardImage1.png" alt="Blog Image" />
-                </div>
-                <div class="carddetails">
-                  <h1 class="h1">Heading 4</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis incidunt, rerum debitis porro aut placeat
-                    voluptatem tempore ratione voluptatum aspernatur blanditiis
-                    sunt pariatur dolor itaque rem voluptas aliquid obcaecati
-                    deleniti. Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Reiciendis incidunt, rerum debitis porro
-                    aut placeat voluptatem tempore ratione voluptatum aspernatur
-                    blanditiis sunt pariatur dolor itaque rem voluptas aliquid
-                    obcaecati deleniti.
-                  </p>
-                  <a class="read" href="">Readmore</a>
-                </div>
-              </div>
-              <div class="blogcardcontent">
-                <div class="card-image">
-                  <img src="../assets/cardImage1.png" alt="Blog Image" />
-                </div>
-                <div class="carddetails">
-                  <h1 class="h1">Heading 5</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis incidunt, rerum debitis porro aut placeat
-                    voluptatem tempore ratione voluptatum aspernatur blanditiis
-                    sunt pariatur dolor itaque rem voluptas aliquid obcaecati
-                    deleniti. Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Reiciendis incidunt, rerum debitis porro
-                    aut placeat voluptatem tempore ratione voluptatum aspernatur
-                    blanditiis sunt pariatur dolor itaque rem voluptas aliquid
-                    obcaecati deleniti.
-                  </p>
-                  <a class="read" href="">Readmore</a>
-                </div>
-              </div>
-              <div class="blogcardcontent">
-                <div class="card-image">
-                  <img src="../assets/cardImage1.png" alt="Blog Image" />
-                </div>
-                <div class="carddetails">
-                  <h1 class="h1">Heading 6</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis incidunt, rerum debitis porro aut placeat
-                    voluptatem tempore ratione voluptatum aspernatur blanditiis
-                    sunt pariatur dolor itaque rem voluptas aliquid obcaecati
-                    deleniti. Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Reiciendis incidunt, rerum debitis porro
-                    aut placeat voluptatem tempore ratione voluptatum aspernatur
-                    blanditiis sunt pariatur dolor itaque rem voluptas aliquid
-                    obcaecati deleniti.
-                  </p>
-                  <a class="read" href="">Readmore</a>
-                </div>
-              </div>
             </div>
-          </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+            </div>
         </div>
+
+        <!-- Portfolio Card 2 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Jane Smith</h2>
+                <p><strong>Course:</strong> Data Science</p>
+                <p><strong>Batch:</strong> DS-2023</p>
+                <p><strong>Start Date:</strong> February 2023</p>
+                <p><strong>End Date:</strong> November 2023</p>
+                <p><strong>Projects Done:</strong> 7</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Jane Smith">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 3 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Michael Johnson</h2>
+                <p><strong>Course:</strong> Mobile App Development</p>
+                <p><strong>Batch:</strong> MAD-2023</p>
+                <p><strong>Start Date:</strong> March 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 4</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Michael Johnson">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 4 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Emily Davis</h2>
+                <p><strong>Course:</strong> UX/UI Design</p>
+                <p><strong>Batch:</strong> UX-2023</p>
+                <p><strong>Start Date:</strong> January 2023</p>
+                <p><strong>End Date:</strong> October 2023</p>
+                <p><strong>Projects Done:</strong> 6</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Emily Davis">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 5 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Robert Wilson</h2>
+                <p><strong>Course:</strong> Cybersecurity</p>
+                <p><strong>Batch:</strong> CS-2023</p>
+                <p><strong>Start Date:</strong> April 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 5</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Robert Wilson">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 6 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Sarah Miller</h2>
+                <p><strong>Course:</strong> Web Development</p>
+                <p><strong>Batch:</strong> WD-2023</p>
+                <p><strong>Start Date:</strong> May 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 5</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Sarah Miller">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 7 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">David Taylor</h2>
+                <p><strong>Course:</strong> Data Science</p>
+                <p><strong>Batch:</strong> DS-2023</p>
+                <p><strong>Start Date:</strong> June 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 4</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="David Taylor">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 8 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Jennifer Brown</h2>
+                <p><strong>Course:</strong> Mobile App Development</p>
+                <p><strong>Batch:</strong> MAD-2023</p>
+                <p><strong>Start Date:</strong> July 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 5</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Jennifer Brown">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 9 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Thomas Anderson</h2>
+                <p><strong>Course:</strong> UX/UI Design</p>
+                <p><strong>Batch:</strong> UX-2023</p>
+                <p><strong>Start Date:</strong> August 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 6</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Thomas Anderson">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 10 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Lisa Johnson</h2>
+                <p><strong>Course:</strong> Cybersecurity</p>
+                <p><strong>Batch:</strong> CS-2023</p>
+                <p><strong>Start Date:</strong> September 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 5</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Lisa Johnson">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 11 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">James Wilson</h2>
+                <p><strong>Course:</strong> Web Development</p>
+                <p><strong>Batch:</strong> WD-2023</p>
+                <p><strong>Start Date:</strong> October 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 3</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="James Wilson">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 12 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Mary Thompson</h2>
+                <p><strong>Course:</strong> Data Science</p>
+                <p><strong>Batch:</strong> DS-2023</p>
+                <p><strong>Start Date:</strong> November 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 2</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Mary Thompson">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 13 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Daniel Martinez</h2>
+                <p><strong>Course:</strong> Mobile App Development</p>
+                <p><strong>Batch:</strong> MAD-2023</p>
+                <p><strong>Start Date:</strong> January 2023</p>
+                <p><strong>End Date:</strong> June 2023</p>
+                <p><strong>Projects Done:</strong> 4</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="Daniel Martinez">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 14 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Patricia Garcia</h2>
+                <p><strong>Course:</strong> UX/UI Design</p>
+                <p><strong>Batch:</strong> UX-2023</p>
+                <p><strong>Start Date:</strong> February 2023</p>
+                <p><strong>End Date:</strong> July 2023</p>
+                <p><strong>Projects Done:</strong> 5</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/women/7.jpg" alt="Patricia Garcia">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 15 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Christopher Lee</h2>
+                <p><strong>Course:</strong> Cybersecurity</p>
+                <p><strong>Batch:</strong> CS-2023</p>
+                <p><strong>Start Date:</strong> March 2023</p>
+                <p><strong>End Date:</strong> August 2023</p>
+                <p><strong>Projects Done:</strong> 6</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="Christopher Lee">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 16 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Linda Hernandez</h2>
+                <p><strong>Course:</strong> Web Development</p>
+                <p><strong>Batch:</strong> WD-2023</p>
+                <p><strong>Start Date:</strong> April 2023</p>
+                <p><strong>End Date:</strong> September 2023</p>
+                <p><strong>Projects Done:</strong> 5</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/women/8.jpg" alt="Linda Hernandez">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 17 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Matthew Young</h2>
+                <p><strong>Course:</strong> Data Science</p>
+                <p><strong>Batch:</strong> DS-2023</p>
+                <p><strong>Start Date:</strong> May 2023</p>
+                <p><strong>End Date:</strong> October 2023</p>
+                <p><strong>Projects Done:</strong> 4</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="Matthew Young">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 18 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Barbara King</h2>
+                <p><strong>Course:</strong> Mobile App Development</p>
+                <p><strong>Batch:</strong> MAD-2023</p>
+                <p><strong>Start Date:</strong> June 2023</p>
+                <p><strong>End Date:</strong> November 2023</p>
+                <p><strong>Projects Done:</strong> 5</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/women/9.jpg" alt="Barbara King">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 19 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Donald Wright</h2>
+                <p><strong>Course:</strong> UX/UI Design</p>
+                <p><strong>Batch:</strong> UX-2023</p>
+                <p><strong>Start Date:</strong> July 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 6</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Donald Wright">
+            </div>
+        </div>
+
+        <!-- Portfolio Card 20 -->
+        <div class="portfolio-card">
+            <div class="portfolio-info">
+                <h2 class="student-name">Susan Lopez</h2>
+                <p><strong>Course:</strong> Cybersecurity</p>
+                <p><strong>Batch:</strong> CS-2023</p>
+                <p><strong>Start Date:</strong> August 2023</p>
+                <p><strong>End Date:</strong> December 2023</p>
+                <p><strong>Projects Done:</strong> 5</p>
+                <div class="link-box">
+                    <a href="#" class="portfolio-link">View Portfolio</a>
+                </div>
+            </div>
+            <div class="student-photo">
+                <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Susan Lopez">
+            </div>
+        </div>
+    </div>
+
       </section>
-
-      <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-      <section id="about-scipy">
-        <div class="about-container-1">
-          <div class="sub-about-container-1">
-            <div class="sub-contents-about-container-1">
-              <div class="heading-sub">
-                <div class="first-content-about">
-                  <span>Excellence in Education</span>
-                </div>
-                <div class="second-content-about">
-                  <h3>
-                    Why We Are Fastest Growing<br /><span
-                      >Software Training Institute
-                    </span>
-                    In Kerala
-                  </h3>
-                </div>
-                <div class="third-content-about">
-                  <div class="card-about">
-                    <div class="card-icon">
-                      <img src="../assets/handshakecopy.png" alt="" />
-                    </div>
-                    <div class="card-heading-about">
-                      <h4>100% Placement <br />Assurance</h4>
-                    </div>
-                    <div class="card-descrition-about">
-                      <p class="card-descrition-about-p">
-                        Our experienced placement faculties provide best
-                        industry connections which help you to land on your
-                        dreamjob
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card-about">
-                    <div class="card-icon">
-                      <img src="../assets/security1.png" alt="" />
-                    </div>
-                    <div class="card-heading-about">
-                      <h4>100% Placement <br />Assurance</h4>
-                    </div>
-                    <div class="card-descrition-about">
-                      <p class="card-descrition-about-p">
-                        Our experienced placement faculyies provide best
-                        industry connections which help you to land on your
-                        dreamjob
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card-about">
-                    <div class="card-icon">
-                      <img src="../assets/stamp.png" alt="" />
-                    </div>
-                    <div class="card-heading-about">
-                      <h4>100% Placement <br />Assurance</h4>
-                    </div>
-                    <div class="card-descrition-about">
-                      <p class="card-descrition-about-p">
-                        Our experienced placement faculyies provide best
-                        industry connections which help you to land on your
-                        dreamjob
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card-about">
-                    <div class="card-icon">
-                      <img src="../assets/security1copy.png" alt="" />
-                    </div>
-                    <div class="card-heading-about">
-                      <h4>100% Placement <br />Assurance</h4>
-                    </div>
-                    <div class="card-descrition-about">
-                      <p class="card-descrition-about-p">
-                        Our experienced placement faculyies provide best
-                        industry connections which help you to land on your
-                        dreamjob
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="carousel-section">
-        <div class="carousel-header-google">
-          <div class="google-details-google">
-            <div class="start-main-container-google">
-              <div class="image-heading-container-google">
-                <div class="image-container-google">
-                  <img
-                    src="../assets/pngimg.com - google_PNG19644.png"
-                    alt=""
-                    class="google-image"
-                  />
-                </div>
-                <div class="review-container">
-                  <h2>Reviews</h2>
-                </div>
-              </div>
-              <div class="star-container-google">
-                <div class="start-point-google">
-                  <h3>4.9</h3>
-                  <span class="review-stars star-size">★★★★★</span>
-                  <span>(319)</span>
-                </div>
-              </div>
-            </div>
-            <div class="review-us-container">
-              <div class="link-container">
-                <a
-                  href="https://www.google.com/search?sca_esv=046182418b1cd8f1&rlz=1C1VDKB_enIN1141IN1141&sxsrf=AHTn8zqoUJHtMKPNmYGD4oAqoIXE5TUBug:1746183439838&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzcZN52t2BB5N2N0BQ9e3Wi2g7pYQE4xZokPXqaxJ90jkBPAXoih1xA2JLKfMhU3ARAD0p5VohPZq38XhpOCHRHqP3CHva4jpDw-9hV5AIOou6gvWLA%3D%3D&q=Scipy+Technologies+Pvt+Ltd+Reviews&sa=X&ved=2ahUKEwj3wZOd0ISNAxWIzDgGHdI-C3kQ0bkNegQIHxAE&biw=1536&bih=695&dpr=1.25"
-                  >Review us on Google</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-container">
-          <div class="carousel-track" id="carouselTrack">
-            <div class="review-card">
-              <div class="review-item">
-                <div class="review-stars">★★★★★</div>
-                <div class="review-text">
-                  Absolutely amazing service! Fast and friendly. Will definitely
-                  come again.
-                </div>
-                <div class="review-author">– John Doe</div>
-              </div>
-              <div class="review-item">
-                <div class="review-stars">★★★★☆</div>
-                <div class="review-text">
-                  Great experience overall. A few small issues, but resolved
-                  quickly.
-                </div>
-                <div class="review-author">– Jane Smith</div>
-              </div>
-            </div>
-
-            <div class="review-card">
-              <div class="review-item">
-                <div class="review-stars">★★★★★</div>
-                <div class="review-text">
-                  Exceeded my expectations. Highly recommended for anyone
-                  needing quick help.
-                </div>
-                <div class="review-author">– Mark Johnson</div>
-              </div>
-              <div class="review-item">
-                <div class="review-stars">★★★★☆</div>
-                <div class="review-text">
-                  Helpful staff and prompt response. Will use again.
-                </div>
-                <div class="review-author">– Lisa Ray</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="nav-buttons">
-          <button onclick="prevSlide()">← Prev</button>
-          <button onclick="nextSlide()">Next →</button>
-        </div>
-      </section>
-
-      <footer class="footer-main" style="margin-top: 50px;">
+      <footer class="footer-main">
         <div class="auto-container">
           <div class="main-footer-widgets">
             <div class="footer-col">
@@ -677,8 +729,6 @@
         </div>
       </footer>
     </div>
-
-    <!-- Side bar menu for mobile and tablet views only -->
     <div class="sidebar">
       <div class="close-btn">
         <span></span>
@@ -718,13 +768,13 @@
           <a href="./careers.html">Careers</a>
         </li>
         <li>
-          <a href="./project.html">Projects</a>
-        </li>
-        <li>
-          <a href="./blog.html" style="color: #fff; background-color: #0092ff"
-            >Blog</a
+          <a
+            href="./project.html"
+            style="color: #fff; background-color: #0092ff"
+            >PRojects</a
           >
         </li>
+        <li><a href="./blog.html">Blog</a></li>
 
         <li><a id="About-us-sidebar" href="./aboutus.html">About Us</a></li>
         <li><a id="contact-sidebar" href="./contact.html">Contact Us</a></li>
@@ -748,28 +798,5 @@
     <script src="owl.carousel.min.js"></script>
     <script src="odometer.js"></script>
     <script src="../js/about.js"></script>
-    <script>
-      const track = document.getElementById("carouselTrack");
-      const totalSlides = track.children.length;
-      let currentIndex = 0;
-
-      function updateCarousel() {
-        const offset = -currentIndex * 100;
-        track.style.transform = `translateX(${offset}%)`;
-      }
-
-      function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateCarousel();
-      }
-
-      function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        updateCarousel();
-      }
-
-      // Auto-play every 5 seconds
-      setInterval(nextSlide, 5000);
-    </script>
   </body>
 </html>

@@ -6,6 +6,7 @@
     <title>
       ScipyTechnologies | Best Software Solutions | Trivandrum, Kerala
     </title>
+    <link rel="stylesheet" href="../css/courses.css" />
 
     <!-- SEO Meta Tags -->
     <meta
@@ -150,7 +151,7 @@
 
     <!-- Internal Modal CSS (Optional: Move to a separate CSS file if preferred) -->
     <style>
-      .modal {
+      .modal1 {
         display: none;
         position: fixed;
         z-index: 999;
@@ -159,7 +160,6 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
@@ -177,7 +177,7 @@
         animation: fadeIn 0.3s ease-in-out;
         max-height: 90vh;
         overflow-y: auto;
-        position: relative;
+        position: relative;  
       }
 
       .close-btn {
@@ -255,7 +255,7 @@
 
     <!-- Ensure your form includes a submit button -->
 
-    <div id="popupModal" class="modal">
+    <div id="popupModal" class="modal1">
       <div class="modal-content">
         <span class="close-btn" id="closeModal">&times;</span>
         <h3 id="modalHead">Know More</h3>
@@ -452,7 +452,8 @@
             >
               <div class="home-col text-container">
                 <h1 class="h1-large fade-in">
-                  Globally Recognised<br> Software Training <br>Institute In Kerala
+                  Globally Recognised<br />
+                  Software Training <br />Institute In Kerala
                 </h1>
                 <h5 class="home-card-title fade-in">
                   Make Your Move Mark Your Success
@@ -702,208 +703,122 @@
           </div>
         </div>
       </section>
-      <section id="services-sect" class="services-sect">
-        <div class="auto-container">
-          <div class="services-card">
-            <div class="service-owl owl-carousel owl-theme">
-              <div class="cards item" id="Software-service1">
-                <div class="card-upper">
-                  <div class="flat-icon">
-                    <i class="fa-solid fa-laptop-code"></i>
-                  </div>
-                  <h4 class="card-heading">
-                    <a href="./pages/softwaredev.html">Business Management</a>
-                  </h4>
-                  <p class="text-card">
-                    Industry specific custom Software development solution for
-                    business enchancement and good will maintainance for
-                    customer satisfaction.
-                  </p>
-                </div>
-                <div class="card-lower">
-                  <a href="#"
-                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
+      <section>
+        <div class="first-outer">
+          <div class="heading-container">
+            <div class="heading-left">
+              <span class="unique-courses"
+                >10+ Unique Online & Offline Courses</span
+              >
+              <!-- <h2>Our <span class="highlight">Featured</span> Courses</h2> -->
+            </div>
+            <div class="tab-container">
+              <button class="tab active" data-filter="all">
+                All Courses <span class="tab-badge">New</span>
+              </button>
+              <button class="tab" data-filter="new">New One</button>
+              <button class="tab" data-filter="recommended">Recommended</button>
+              <!-- <button class="tab" data-filter="placed">Most Placed</button> -->
+            </div>
+          </div>
+
+          <div class="course-container">
+            <div class="course-card">
+              <div style="position: relative">
+                <span class="badge">Recommended</span>
+                <img src="../assets/Careers.jpg" alt="Software Testing" />
               </div>
-              <div class="cards item" id="Advanced-service1">
-                <div class="card-upper">
-                  <div class="flat-icon">
-                    <i class="fa-solid fa-robot"></i>
-                  </div>
-                  <h4 class="card-heading">
-                    <a href="./pages/AdvancedTech.html">Advanced Tech</a>
-                  </h4>
-                  <p class="text-card">
-                    Our advanced technology features Artificial Intelligence and
-                    other main technology solutions for industry 4.0.
-                  </p>
-                </div>
-                <div class="card-lower">
-                  <a href="#"
-                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
+              <div class="course-info">
+                <div class="course-meta">9 Modules • 4 Months</div>
+                <h3>Diploma Courses</h3>
+                <div class="rating">★★★★★ (4.88)</div>
+                <div class="placement">🎯 100% Placement assistance</div>
               </div>
-              <div class="cards item" id="Maintainance-service1">
-                <div class="card-upper">
-                  <div class="flat-icon">
-                    <i class="fa-regular fa-circle-question"></i>
-                  </div>
-                  <h4 class="card-heading">
-                    <a href="./pages/maintenance.html">Maintenance & Support</a>
-                  </h4>
-                  <p class="text-card">
-                    Our Maintenance & Support offer top quality well organised
-                    adaptive support.
-                  </p>
-                </div>
-                <div class="card-lower">
-                  <a href="#"
-                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
+              <a href="./diplomaCourses.html" style="text-decoration: none"
+                ><div class="see-more">See More</div></a
+              >
+            </div>
+
+            <div class="course-card">
+              <div style="position: relative">
+                <span class="badge">Recommended</span>
+                <img src="../assets/Careers.jpg" alt="MEARN Stack" />
               </div>
-              <div class="cards item" id="Advisory-service1">
-                <div class="card-upper">
-                  <div class="flat-icon">
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                  </div>
-                  <h4 class="card-heading">
-                    <a href="./pages/advisory.html">Advisory</a>
-                  </h4>
-                  <p class="text-card">
-                    Having a right advices from experts and services makes your
-                    firm topper, we provide many marketing services which needed
-                    to your bussiness growth.
-                  </p>
-                </div>
-                <div class="card-lower">
-                  <a href="#"
-                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
+              <div class="course-info">
+                <div class="course-meta">6 Modules • 6 Months</div>
+                <h3>Hybrid Course</h3>
+                <div class="rating">★★★★★ (4.98)</div>
+                <div class="placement">🎯 100% Placement assistance</div>
               </div>
-              <div class="cards item" id="webdev-service1">
-                <div class="card-upper">
-                  <div class="flat-icon">
-                    <i class="fa-brands fa-chrome"></i>
-                  </div>
-                  <h4 class="card-heading">
-                    <a href="./pages/websitedev.html">Website Development</a>
-                  </h4>
-                  <p class="text-card">
-                    Having a right advices from experts and services makes your
-                    firm topper, we provide many marketing services which needed
-                    to your bussiness growth.
-                  </p>
-                </div>
-                <div class="card-lower">
-                  <a href="#"
-                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
+              <a href="./hybridCourses.html" style="text-decoration: none"
+                ><div class="see-more">See More</div></a
+              >
+            </div>
+
+            <div class="course-card">
+              <div style="position: relative">
+                <span class="badge new">New One</span>
+                <img src="../assets/Careers.jpg" alt="Robotics" />
               </div>
-              <div class="cards item" id="digital-service1">
-                <div class="card-upper">
-                  <div class="flat-icon">
-                    <i class="fa-solid fa-comments-dollar"></i>
-                  </div>
-                  <h4 class="card-heading">
-                    <a href="./pages/advisory.html">Digital Marketing</a>
-                  </h4>
-                  <p class="text-card">
-                    Having a right advices from experts and services makes your
-                    firm topper, we provide many marketing services which needed
-                    to your bussiness growth.
-                  </p>
-                </div>
-                <div class="card-lower">
-                  <a href="#"
-                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
+              <div class="course-info">
+                <div class="course-meta">9 Modules • 5 Months</div>
+                <h3>Professional Course</h3>
+                <div class="rating">★★★★★ (4.98)</div>
+                <div class="placement">🎯 100% Placement assistance</div>
               </div>
-              <div class="cards item" id="erp-service1">
-                <div class="card-upper">
-                  <div class="flat-icon">
-                    <i class="fa-solid fa-fingerprint"></i>
-                  </div>
-                  <h4 class="card-heading">
-                    <a href="./pages/advisory.html">ERP Solutions</a>
-                  </h4>
-                  <p class="text-card">
-                    Having a right advices from experts and services makes your
-                    firm topper, we provide many marketing services which needed
-                    to your bussiness growth.
-                  </p>
-                </div>
-                <div class="card-lower">
-                  <a href="#"
-                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
+              <a href="./professionalCourse.html" style="text-decoration: none"
+                ><div class="see-more">See More</div></a
+              >
+            </div>
+
+            <div class="course-card">
+              <div style="position: relative">
+                <span class="badge">Recommended</span>
+                <img src="../assets/Careers.jpg" alt="Flutter" />
               </div>
-              <div class="cards item" id="app-service1">
-                <div class="card-upper">
-                  <div class="flat-icon">
-                    <i class="fa-brands fa-app-store"></i>
-                  </div>
-                  <h4 class="card-heading">
-                    <a href="./pages/appdev.html">App Development</a>
-                  </h4>
-                  <p class="text-card">
-                    Having a right advices from experts and services makes your
-                    firm topper, we provide many marketing services which needed
-                    to your bussiness growth.
-                  </p>
-                </div>
-                <div class="card-lower">
-                  <a href="#"
-                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
+              <div class="course-info">
+                <div class="course-meta">4 Modules • 5 Months</div>
+                <h3>Short Term Course</h3>
+                <div class="rating">★★★★★ (4.9)</div>
+                <div class="placement">🎯 100% Placement assistance</div>
               </div>
-              <div class="cards item" id="brand-service1">
-                <div class="card-upper">
-                  <div class="flat-icon">
-                    <i class="fa-solid fa-code-branch"></i>
-                  </div>
-                  <h4 class="card-heading">
-                    <a href="./pages/branding.html">Branding</a>
-                  </h4>
-                  <p class="text-card">
-                    Having a right advices from experts and services makes your
-                    firm topper, we provide many marketing services which needed
-                    to your bussiness growth.
-                  </p>
-                </div>
-                <div class="card-lower">
-                  <a href="#"
-                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
+              <a href="./shortTermCourses.html" style="text-decoration: none"
+                ><div class="see-more">See More</div></a
+              >
+            </div>
+
+            <div class="course-card">
+              <div style="position: relative">
+                <span class="badge">Recommended</span>
+                <img src="../assets/Careers.jpg" alt="Django" />
               </div>
-              <div class="cards item" id="ai-service1">
-                <div class="card-upper">
-                  <div class="flat-icon">
-                    <i class="fa-solid fa-brain"></i>
-                  </div>
-                  <h4 class="card-heading">
-                    <a href="./pages/branding.html">AI Solutions</a>
-                  </h4>
-                  <p class="text-card">
-                    Having a right advices from experts and services makes your
-                    firm topper, we provide many marketing services which needed
-                    to your bussiness growth.
-                  </p>
-                </div>
-                <div class="card-lower">
-                  <a href="#"
-                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
+              <div class="course-info">
+                <div class="course-meta">5 Modules • 6.5 Months</div>
+                <h3>Business Management Courses</h3>
+                <div class="rating">★★★★☆ (4.67)</div>
+                <div class="placement">🎯 100% Placement assistance</div>
               </div>
+              <a
+                href="./businessManagementCourses.html"
+                style="text-decoration: none"
+                ><div class="see-more">See More</div></a
+              >
+            </div>
+
+            <div class="course-card">
+              <div style="position: relative">
+                <span class="badge">Recommended</span>
+                <img src="../assets/Careers.jpg" alt="Data Science" />
+              </div>
+              <div class="course-info">
+                <div class="course-meta">10 Modules • 7 Months</div>
+                <h3>7-Month Master Courses</h3>
+                <div class="rating">★★★★★ (4.95)</div>
+                <div class="placement">🎯 100% Placement assistance</div>
+              </div>
+              <a href="./masterCourses.html" style="text-decoration: none"
+                ><div class="see-more">See More</div></a
+              >
             </div>
           </div>
         </div>
@@ -938,21 +853,33 @@
                   <div class="logo-main-container">
                     <div class="logo-container">
                       <div class="logo-icon">
-                        <img src="./assets/google-docs (1).png" alt="">
+                        <img src="./assets/google-docs (1).png" alt="" />
                       </div>
-                      <div class="logo-content"><p class="logo-content-p" style="margin: 0;">50+ Expert Trainers</p></div>
+                      <div class="logo-content">
+                        <p class="logo-content-p" style="margin: 0">
+                          50+ Expert Trainers
+                        </p>
+                      </div>
                     </div>
                     <div class="logo-container">
                       <div class="logo-icon">
                         <img src="./assets/security1.png" alt="" />
                       </div>
-                      <div class="logo-content"><p class="logo-content-p" style="margin: 0;">50+ Expert Trainers</p></div>
+                      <div class="logo-content">
+                        <p class="logo-content-p" style="margin: 0">
+                          50+ Expert Trainers
+                        </p>
+                      </div>
                     </div>
                     <div class="logo-container">
                       <div class="logo-icon">
                         <img src="./assets/graduation.png" alt="" />
                       </div>
-                      <div class="logo-content"><p class="logo-content-p" style="margin: 0;">50+ Expert Trainers</p></div>
+                      <div class="logo-content">
+                        <p class="logo-content-p" style="margin: 0">
+                          50+ Expert Trainers
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1454,7 +1381,7 @@
         </div>
       </section>
 
-      <footer class="footer-main">
+      <footer class="footer-main" id="last-section">
         <div class="auto-container">
           <div class="main-footer-widgets">
             <div class="footer-col">
@@ -1696,30 +1623,42 @@
     </script>
     <!-- script for popup form-->
     <script>
-      // Function to show the popup modal after 5 seconds
-      window.onload = function () {
-        // Check if the modal has already been shown in the current session
-        if (!sessionStorage.getItem("modalShown")) {
-          setTimeout(function () {
-            document.getElementById("popupModal").style.display = "flex";
-            // Store a flag in sessionStorage to prevent it from showing again during this session
-            sessionStorage.setItem("modalShown", "true");
-          }, 5000);
+      // Function to show modal
+      function showModal() {
+        const modal = document.getElementById("popupModal");
+        modal.style.display = "flex";
+      }
+
+      // Function to check if an element is in viewport
+      function isInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top <= window.innerHeight && rect.bottom >= 0;
+      }
+
+      // Show modal once when last section comes into view
+      let modalShown = false;
+      window.addEventListener("scroll", function () {
+        const lastSection = document.getElementById("last-section");
+        if (!modalShown && isInViewport(lastSection)) {
+          showModal();
+          modalShown = true; // Prevent it from showing again
         }
-      };
+      });
 
-      // Function to close the modal
-      document.getElementById("closeModal").onclick = function () {
-        document.getElementById("popupModal").style.display = "none";
-      };
+      // Close modal button handler
+      document
+        .getElementById("closeModal")
+        .addEventListener("click", function () {
+          document.getElementById("popupModal").style.display = "none";
+        });
 
-      // Optional: Close modal when clicking outside of it
-      // window.onclick = function(event) {
-      //     var modal = document.getElementById('popupModal');
-      //     if (event.target == modal) {
-      //         modal.style.display = 'none';
-      //     }
-      // };
+      // Optional: Close modal on outside click
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("popupModal");
+        if (e.target === modal) {
+          modal.style.display = "none";
+        }
+      });
     </script>
 
     <!-- google sheet -->
@@ -1804,6 +1743,54 @@
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/app.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll(".tab");
+        const cards = document.querySelectorAll(".course-card");
+
+        function applyFilter(tab) {
+          tabs.forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+
+          const filter = tab.getAttribute("data-filter");
+          let visibleIndex = 0;
+
+          cards.forEach((card) => {
+            card.classList.remove("animate"); // reset
+
+            const badge = card.querySelector(".badge");
+            const badgeText = badge?.textContent.trim().toLowerCase();
+            const badgeClass = badge?.classList;
+
+            const isRecommended =
+              badgeClass?.contains("placed") || badgeText === "recommended";
+            const isNew = badgeClass?.contains("new") || badgeText === "new";
+
+            const shouldShow =
+              filter === "all" ||
+              (filter === "recommended" && isRecommended) ||
+              (filter === "new" && isNew);
+
+            if (shouldShow) {
+              card.style.display = "flex";
+              setTimeout(() => {
+                card.classList.add("animate");
+              }, visibleIndex * 150);
+              visibleIndex++;
+            } else {
+              card.style.display = "none";
+            }
+          });
+        }
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => applyFilter(tab));
+        });
+
+        // Trigger filter on initial load
+        applyFilter(tabs[0]);
+      });
+    </script>
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe

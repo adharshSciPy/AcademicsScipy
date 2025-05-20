@@ -481,24 +481,29 @@
           <form class="form-grid">
             <div class="form-groupv1">
               <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Your name" required />
+              <input type="text" id="Name" placeholder="Your name" required />
             </div>
             <div class="form-groupv1">
               <label for="qualification">Qualification</label>
               <input
                 type="text"
-                id="qualification"
+                id="Qualification"
                 placeholder="Your qualification"
                 required
               />
             </div>
             <div class="form-groupv1">
-              <label for="field">Specialized Field</label>
-              <input type="text" id="field" placeholder="Your field" required />
+              <label for="specializedfield">Specialized Field</label>
+              <input
+                type="text"
+                id="SpecializedField"
+                placeholder="Your field"
+                required
+              />
             </div>
             <div class="form-groupv1">
               <label for="country">Country</label>
-              <select id="country" required>
+              <select id="Country" required>
                 <option value="">Choose a country...</option>
                 <option>India</option>
                 <option>USA</option>
@@ -511,17 +516,17 @@
             <div class="form-groupv1">
               <label for="whatsapp">WhatsApp</label>
               <input
-                type="tel"
-                id="whatsapp"
+                type="text"
+                id="WhatsApp"
                 placeholder="WhatsApp number"
                 required
               />
             </div>
             <div class="form-groupv1">
-              <label for="phone">Phone No</label>
+              <label for="phoneno">Phone No</label>
               <input
-                type="tel"
-                id="phone"
+                type="text"
+                id="PhoneNo"
                 placeholder="Your phone number"
                 required
               />
@@ -530,7 +535,7 @@
               <label for="linkedin">LinkedIn</label>
               <input
                 type="url"
-                id="linkedin"
+                id="LinkedIn"
                 placeholder="LinkedIn profile URL"
               />
             </div>
@@ -538,7 +543,7 @@
               <label for="instagram">Instagram</label>
               <input
                 type="url"
-                id="instagram"
+                id="Instagram"
                 placeholder="Instagram profile URL"
               />
             </div>
@@ -714,7 +719,7 @@
         </div>
       </section>
 
-      <footer class="footer-main" style="margin-top: 50px;">
+      <footer class="footer-main" style="margin-top: 50px">
         <div class="auto-container">
           <div class="main-footer-widgets">
             <div class="footer-col">
@@ -926,6 +931,80 @@
 
       // Auto-play every 5 seconds
       setInterval(nextSlide, 5000);
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector(".form-grid");
+        const requiredInputs = form.querySelectorAll(
+          "input[required], select[required]"
+        );
+        const submitBtn = form.querySelector(".button");
+        const originalBtnText = submitBtn.innerHTML;
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Set loading state
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = 'Sending <span class="spinner"></span>';
+
+          let allFilled = true;
+          requiredInputs.forEach((input) => {
+            if (!input.value.trim()) {
+              allFilled = false;
+              input.style.border = "1px solid red";
+            } else {
+              input.style.border = "";
+            }
+          });
+
+          if (!allFilled) {
+            alert("Please fill in all required fields before submitting.");
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+            return;
+          }
+
+          const formData = new URLSearchParams({
+            Name: form.querySelector("#Name").value,
+            Qualification: form.querySelector("#Qualification").value,
+            SpecializedField: form.querySelector("#SpecializedField").value,
+            Country: form.querySelector("#Country").value, // dropdown select value
+            WhatsApp: form.querySelector("#WhatsApp").value,
+            PhoneNo: form.querySelector("#PhoneNo").value,
+            LinkedIn: form.querySelector("#LinkedIn").value,
+            Instagram: form.querySelector("#Instagram").value,
+          });
+
+          fetch(
+            "https://script.google.com/macros/s/AKfycbx7AA0r1xV060ODPEdLUTjynxsbxgpntYFGDSOB6uh4KgvykEY3Nf1wN_WFKHgTMhIzgQ/exec",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: formData,
+            }
+          )
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Data sent:", data);
+              form.reset();
+              alert("Form submitted successfully!");
+            })
+            .catch((error) => {
+              console.error("Submission error:", error);
+              alert(
+                "There was an error submitting your form. Please try again."
+              );
+            })
+            .finally(() => {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalBtnText;
+            });
+        });
+      });
     </script>
   </body>
 </html>

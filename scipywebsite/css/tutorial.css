@@ -41,6 +41,7 @@ body {
   will-change: transform;
   padding-left: 20px;
    margin-bottom:50px;
+   overflow: hidden;
 }
 
 .video-card2 {
@@ -66,4 +67,12 @@ body {
   object-fit: cover;
   display: block;
   /* border-radius: 18px; */
+}
+.slider2-container{
+  overflow: hidden;
+}
+@media (max-width:1255px) {
+  .tutorial-sections{
+    padding-top: 50px;
+  }
 }

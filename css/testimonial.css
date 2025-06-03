@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  background: #f0f2f5;
+  font-family: sans-serif;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 0;
+  background: #fff;
+}
+
+.video-slider {
+  display: flex;
+  width: max-content;
+  gap: 30px;
+  will-change: transform;
+  padding-left: 20px;
+}
+
+.video-card {
+  width: 300px;
+  height: 350px;
+  flex-shrink: 0;
+  /* border-radius: 18px; */
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff, #e6f2ff);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease;
+}
+
+.video-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* border-radius: 18px; */
+}
+.testimonial-slider {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+        }
+
+        .testimonial-slide {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .testimonial-slide.active {
+            display: block;
+        }
+
+        .person-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 4px solid #4a90e2;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .person-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .person-name {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .person-stream {
+            color: #4a90e2;
+            font-weight: 600;
+            margin-bottom: 25px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .testimonial-text {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 15px;
+            position: relative;
+            font-style: italic;
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .testimonial-text:before {
+            content: '"';
+            font-size: 80px;
+            color: #4a90e2;
+            opacity: 0.1;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .slide-indicators {
+            display: flex;
+            margin: 0 25px;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            margin: 0 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: #4a90e2;
+            transform: scale(1.2);
+        }
+
+        .prev-slide, .next-slide {
+            background: #4a90e2;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .prev-slide:hover, .next-slide:hover {
+            background: #3a7bc8;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-slider {
+                padding: 20px;
+            }
+            
+            .testimonial-text {
+                padding: 20px;
+                font-size: 1rem;
+            }
+        }
